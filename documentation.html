@@ -17,8 +17,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Narratives</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="timeTravel.html">Time Travel</a></li> <!--CHANGE THIS-->
-                            <li><a class="dropdown-item" href="lovestories.html">Love Stories</a></li> <!--CHANGE THIS-->
+                            <li><a class="dropdown-item" href="timeTravel.html">Time Travel</a></li>
+                            <li><a class="dropdown-item" href="lovestories.html">Love Stories</a></li>
                             <li><a class="dropdown-item" href="childhood.html">Back to Childhood</a></li>
                         </ul>
                     </li>
@@ -32,34 +32,93 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="documentation.html" title="Dropdown">Documentation</a>
+                        <a class="nav-link" href="documentation.html" title="Documentation">Documentation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="disclaimer.html" title="Disclaimer">Disclaimer</a> <!--CHANGE THIS-->
+                        <a class="nav-link" href="disclaimer.html" title="Disclaimer">Disclaimer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html" title="About">About</a> <!--CHANGE THIS-->
+                        <a class="nav-link" href="about.html" title="About">About</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <h1 class="titolopagina">Documentation</h1>
-        <h2>1. Brief</h2>
+        <h2>1. General scope and purpose</h2>
+        <p>
+            London Film Route is a web app that offers help in discovering the actual filming locations in central London.
+            It follows the specifications of the <i>Live Museum of Movie Locations</i> designed by Professor Fabio Vitali, final project of the <i>Information Modelling and Web Technologies</i> course, within the Master's Degree Programme<i>Digital Humanities and Digital Knowledge</i> at the University of Bologna.
+            <br>The scope of the project is to implement a companion app that guides the visitor to real shooting locations across a chosen place or region, so that the visit can be planned both at home or during the visit itself.
+            In fact, there are maps and images of the places, and videos and pictures of the films: doing so, visitors can angle their cameras to recreate the exact same scene.
+            The locations must be visited in one single day and not organized randomly, but they follow a narrative, and the visitor can move back and forth within it. For each location several descriptive texts are meant for different levels of details and for different age, competency and native language of the recipient.
+            A chronological narrative is compulsory, plus two or three more of our choice. Please refer to <a href="#section5">Section 5</a> for more details on this.
+            <br>In addition to that, the app must present different themes so that the visitor can also choose the graphic that is most appropriate for his visit, the most representative of the desired film, or simply the one that he likes the most.
+            Since there are two people in our team, we developed four themes, two per each (See <a href="#section6">Section 6</a>).
+            <br>For the sake of the project's completeness, the information is divided across three pages: <a href="documentation.html">Documentation</a> (the present page), <a href="#">Disclaimer</a> (information about copyright issues and commercial purposes), and <a href="#">About</a> (who are the members of the team).
+        </p>
+        <h4>1.1 Topic and initial ideas</h4>
+        <p>
+            The choice of London was based on the fact that, after a brief discussion between us, we noted it had served as the setting for many films we had both seen; furthermore, as a famous capital city, it attracts millions of visitors every year.
+            The app's name alludes to a road connecting the locations, as requested; indeed, the project centers on narratives, predefined itineraries that link the places according to a specific logic and that the visitors can easily follow thanks to the provided maps and photos.
+            <!--aggiungere logo, location, film e narrative (introduzione)-->
+        </p>
         <h2>2. Benchmark</h2>
-        <h4>2.1 Websites on London's film locations</h4>
-        <h4>2.2 Blogs on London's film locations</h4>
-        <h4>2.3 Maps of films' locations</h4>
-        <h2>3. Wireframe</h2> <!--Dividiere chi ha fatto cosa-->
-        <h2>4. Layout choices</h2> <!--Dividiere chi ha fatto cosa-->
-        <h2>5. Themes</h2>
-        <h4>5.1 English Renaissance (Susanna)</h4>
-        <h4>5.2 Early 1900s (Angela)</h4>
-        <h4>5.3 90s-00s Newspaper (Susanna)</h4>
-        <h4>5.4 Future (Angela)</h4>
-        <h2>6. Narratives</h2>
-        <h4>6.1 Time Travel (Together)</h4>
-        <h4>6.2 Love Stories (Susanna)</h4>
-        <h4>6.3 Back to Childhood (Angela)</h4>
+        We found many websites and online sources dedicated to the same topic that we chose: they have been very useful for us too, but we noticed that they all lack something:
+        some present information but no images, others include film frames but lack a full explanation of the location, and hardly any show the exact location on a map.
+        Here are reported the main references that we looked at.
+        <h4>2.1 Website on London's film locations</h4>
+        <ul>
+            <li><a href="https://londononlocation.co.uk" target="_blank" title="London on Location">London on Location</a>: the locations used for films set in the twentieth century are listed in chronological order. There are the frames of the films but not maps. The fact that it deals only with the twentieth century greatly limits the amount of material.</li>
+            <li><a href="https://www.visitbritain.com/en/itineraries/london-film-and-tv-itinerary" target="_blank" title="Visit Britain - London film and TV itinerary">Visit Britain - London film and TV itinerary</a>: this touristic website offers themed itineraries based on films and TV series, or on regions of the UK. Maps, transports and travel times are included but no images of the places.</li>
+        </ul>
+        <h4>2.2 Websites on general films' locations worldwide</h4>
+        <ul>
+            <li><a href="https://movie-locations.com" target="_blank" title="The Worldwide Guide to Movie Locations">The Worldwide Guide to Movie Locations</a>: inside this website are listed as much locations as possible worldwide. It is constantly being updated and the locations can be searched by film title, by actors or directors, or by country. It has nice explanations about the places but there are no maps anywhere.</li>
+            <li><a href="https://moviescenemap.com" target="_blank" title="Movie Scene Map">Movie Scene Map</a>: this well-done map went viral for being an ambitious project of collecting all the films' locations around the world, with images. However, it refers to the Wikipedia page for the text and the image (just one per place), and there are no directions on how to actually get to the location. Furthermore, it does not follow a narrative.</li>
+        </ul>
+        <h2>3. Wireframe</h2>
+        <p>
+            Following the project guidelines, the page wireframes were implemented using <a href="https://www.canva.com" target="_blank" title="Canva">Canva</a>.
+            First, together we decided to have a navbar and a footer common to all the pages and we met for designing the page layout for the chronological narrative, that we chose as starting point because it is the compulsory narrative, and we thought it was the most complex page to design, so it soon became our model in mind for all the others. The layout choices are shown in detalis in <a href="#section4">Section 4</a> of the documentation.
+            Then, we decided to divide up the remaining wireframe pages as follows: Angela made the homepage, the documentation page and the single location page; Susanna made the team page and the disclaimer page.
+            We did not implement a specific wireframe for the other narratives because they are the same as the chronological one, except for the timeline, which is missing.
+            <!--mettere foto-->
+        </p>
+        <h2 id="section4">4. Layout choices</h2> <!--Dividiere chi ha fatto cosa. Fare elenco puntato per tre: together, Susanna, Angela-->
+        <h2 id="section5">5. Narratives</h2>
+        <h4>5.1 Time Travel (Together)</h4>
+        <h4>5.2 Love Stories (Susanna)</h4>
+        <h4>5.3 Back to Childhood (Angela)</h4>
+        <h2 id="section6">6. Themes</h2>
+        <p>
+            Another compulsory task of the project is let the user change the theme to see the website with different colours, fonts and tones.
+            Since we are a team of two, we created two themes each: we chose ones that were distinct from each other so that we would both be working on different, more stimulating periods, rather than picking two that were too close chronologically.
+        </p>
+        <h4>6.1 English Renaissance (Susanna)</h4>
+        <h4>6.2 Early 1900s (Angela)</h4>
+        <p>
+            The research started with a simple request on the browser: “artistic currents of early 1900s”, for having an idea about the art of those years. I found a conceptual map on this website (in Italian):
+            <a href="https://www.studenti.it/mappa-concettuale-sui-movimenti-artistici-del-900-prima-parte.html" target="_blank" title="Studenti - Mappa Concettuale sui movimenti artistici del 900">Studenti - Mappa Concettuale sui movimenti artistici del 900</a>.
+            Due to the fact that there were a lot of currents and each one of them has been very different from the other, I moved to “aesthetic first half century of 1900s” because I wanted to discover more about the fashion, the style and, in general, what colours, shades and fonts common people used the most. So, I navigated a nice website, <a href="https://fashionhistory.fitnyc.edu" target="_blank" title="Fashion History">Fashion History</a>,
+            which has a dedicated section for each decade of the selected century. I reviewd the decades from 1900 to 1949 and then I narrowed the scope to approximately 1910-1930 because the films chosen that are set in the first half of the 20th century are more specifically referred to that period (<i>The King’s Speech</i>, 2010; <i>Mary Poppins</i>, 1964; <i>Mary Poppins Returns</i>, 2018).
+            Speaking about colours, I decided to use primarily red and dark blue, inspired by one of the most iconic dresses of Mary Poppins. <!--inserire riferimento alla foto che ci sarà dopo-->In addition to that, red and blue are in Great Britain’s flag and are also the official colours of the London Underground, so these colours are a homage to the city that we are focusing on. The choice of warmer and darker shades (in fact the red is not so bright) was made because in the public imagination in London is always foggy and rainy, and the bright light of sun is rare.
+            <br>For what concerns the font, the reasearch started once again from a request on the browser: “fonts born on the first half century of 1900s”. I found a very detailed category on <a href="https://en.wikipedia.org/wiki/Category:Typefaces_and_fonts_introduced_in_the_20th_century" target="_blank" title="Wikipedia - Category: Typefaces and fonts introduced in the 20th century">Wikipedia</a>.
+            For the same reasons as above, I focused on the years from 1910 to 1930 and consequently chose the two fonts that seemed the most legible, elegant, and versatile across the artistic movements I had identified at the start: <i>Goudy Old Style</i> and <i>Dominus</i>. Since we used the <a href="https://fonts.google.com" target="_blank" title="Google Fonts">Google Fonts library</a> for all the other themes as well, I looked for these two fonts there. However, Google Fonts doesn’t have the exact font, so I found something very similar: 
+            <i>Domine</i> and <i>Goudy Bookletter 1911</i>. The final choice has been <i>Goudy Bookletter 1911</i> because it seems more readable as the letters are shorter and stockier, with less mannerism, whereas Domine features more elongated letters and an Art Nouveau style that does not suit the rigorous English style and the aesthetic of the selected films.
+        </p>
+        <h4>6.3 90s-00s Newspaper (Susanna)</h4>
+        <h4>6.4 Future (Angela)</h4>
+        <p>
+            The research for the futuristic theme started from an idea: instead of thinking about abstruse futures, I preferred to look for information on the latest trends in web design and development, in order to offer a plausible preview of what awaits us. In fact, the first research on the browser was “future of web development” and I found the following article:
+            <a href="https://dev.to/ingosteinke/2026-web-design-and-tech-predictions-3694" target="_blank" title="Future Web, Design, and Tech Predictions - and a Review of Last Year's Forecast">Future Web, Design, and Tech Predictions - and a Review of Last Year's Forecast</a>.
+            After that, I modified the question to “future of web design”, finding another article: <a href="https://www.figma.com/resource-library/web-design-trends/" target="_blank" title="Top Web design trends for 2026">Top Web design trends for 2026</a>.
+            Two main things emerge: the use of Artificial Intelligence and colours must evoke emotions.<br>For what concerns the colours, psychology is inferred: on one side we tend to feel relaxed in front of warm and soft tones, but our eyes are captured by bright colours, especially if they conflict with each other (e.g. yellow and blue).
+            This results in two branches of web design: those who choose a clean and timeless look, using shades of white, beige or brown, and those who go the opposite way and fill their websites with a lot of contrasts, mannerisms, animations and even pop elements such as emojis and stickers.
+            However, all the article mentioned the growing possibility of customization, letting the users change the layout and the aspect based on anyone’s tastes.
+            For example, the articles highlight that young users love dark mode (i.e. by reversing the larger, usually light, elements and the small, usually dark, elements). For this reason, I opted for a dark mode simulation, with a very dark gray background and off-white text, similar to Pantone's color of the year 2026: <a href="https://www.pantone.com/eu/it-it/color-of-the-year/2026" traget="_blank" title="Pantone's cloud dancer">cloud dancer</a>.
+            The idea behind this is that later on the theme could be customized by the users as he likes, like a template.
+            <br>The font used is called Inclusive Sans (found once again on <a href="https://fonts.google.com">Google Fonts</a>): it is a sans-serif font, designed in particular for accessibility and readability. In fact, the 21st century brought a new light on specific learning disorders, disability and situations of this kind, and going forward in time I think that it will continue to extend.
+        </p>
         <h2>7. Implementation</h2> <!--Dividiere chi ha fatto cosa-->
         <footer>
             <div class="row">
@@ -69,8 +128,8 @@
                 </div>
                 <div class="col-sm-2 d-flex flex-column">
                     <h5>Narratives</h5>
-                    <a class="narlink" href="timeTravel.html" title="Time Travel">Time Travel</a> <!--CHANGE THIS-->
-                    <a class="narlink" href="lovestories.html" title="Love Stories">Love Stories</a> <!--CHANGE THIS-->
+                    <a class="narlink" href="timeTravel.html" title="Time Travel">Time Travel</a>
+                    <a class="narlink" href="lovestories.html" title="Love Stories">Love Stories</a>
                     <a class="narlink" href="childhood.html" title="Back to Childhood">Back to Childhood</a>
                 </div>
                 <div class="col-sm-2 d-flex flex-column">
@@ -82,8 +141,8 @@
                 </div>
                 <div class="col-sm-2 d-flex flex-column">
                     <a class="foolink" href="documentation.html" title="Documentation">Documentation</a>
-                    <a class="foolink" href="disclaimer.html" title="Disclaimer">Disclaimer</a> <!--CHANGE THIS-->
-                    <a class="foolink" href="about.html" title="About">About</a> <!--CHANGE THIS-->
+                    <a class="foolink" href="disclaimer.html" title="Disclaimer">Disclaimer</a>
+                    <a class="foolink" href="about.html" title="About">About</a>
                 </div>
                 <div class="col-sm-4 text-sm-end">
                     <h5>Contacts</h5>
