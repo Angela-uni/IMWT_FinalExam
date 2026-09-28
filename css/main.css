@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap");
+/* aggiungi i tuoi */
+
+
+/* TEMA 1 = DEFAULT (per ora ho messo il mio di inizio 1900)*/
+:root {
+    --bg-color: white;
+    --text-color: #18166B;
+    --primary-color: #C41C00;
+    --font-family: "Goudy Bookletter 1911", serif;
+
+    /* sovrascrittura variabili di Bootstrap */
+    --bs-body-bg: var(--bg-color);
+    --bs-body-color: var(--text-color);
+    --bs-body-font-family: var(--font-family);
+}
+
+/* TEMA 2 = ENGLISH RENAISSANCE */
+
+
+/* TEMA 3 = 90-00 NEWSPAPER */
+
+/* TEMA 4 = FUTURE */
+body.future {
+    --bg-color: #212020;
+    --text-color: #F0EEE9;
+    --primary-color: black;
+    --font-family: "Inclusive Sans", sans-serif;
+}
+
+/* REGOLE GLOBALI CON LE VARIABILI: ANCORA DA DEFINIRE! */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+.navbar, .dropdown-menu, footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--primary-color)
+}
+
+/* LAYOUT AND POSITIONING */
