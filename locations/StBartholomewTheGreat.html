@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>London Film Route | St Bartholomew The Great </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Logo</a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Narratives</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../timeTravel.html">Time Travel</a></li>
+                            <li><a class="dropdown-item" href="../lovestories.html">Love Stories</a></li>
+                            <li><a class="dropdown-item" href="../childhood.html">Back to Childhood</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Themes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English renaissance</a></li>
+                            <li><a class="dropdown-item" href="#">Early 1900s</a></li>
+                            <li><a class="dropdown-item" href="#">90s-00s Newspaper</a></li>
+                            <li><a class="dropdown-item" href="#">Future</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../documentation.html" title="Dropdown">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../disclaimer.html" title="Disclaimer">Disclaimer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html" title="About">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- LOCATION PAGE -->
+        <main>
+            <!-- Title -->
+            <h1>St Bartholomew The Great</h1>
+
+            <section class="location-container">
+                
+                <!-- Location photo -->
+                <!--Provider of the photo: https://www.visitlondon.com/-->
+                <div class="photo-box">
+                    <img src="../imgs/StBartholomewTheGreat.jpg" alt="Photo">
+                </div>
+
+                <!-- Box text for the fetch -->
+                <div class="text-scroll-box">
+                <!-- Name of the Location -->
+                <h3 id="location-text-title"></h3>
+    
+                <!-- box container for JS -->
+                <div id="text-container"></div>
+    
+                <!-- Text button -->
+                <button type="button" id="btn-tell-less">Tell me less</button>
+                <button type="button" id="btn-tell-more">Tell me more</button>
+                </div>
+
+                <!-- 3. Metadata -->
+                <div class="metadata-box">
+                    <h3>Metadata</h3>
+                    <ul>
+                        <li><strong>Name:</strong> St Bartholomew The Great</li>
+                        <li><strong>Coordinates:</strong> 51.51892122834338, -0.09978219226750176</li>
+                        <li><strong>Place type:</strong> church</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Map -->
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1790409364456!6m8!1m7!1s4Rr43FsS9UkBoO1ejXCIAw!2m2!1d51.51900771486485!2d-0.09980934940652006!3f136.93062368676712!4f-1.7052254142213314!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+                <!-- 5. Link YouTube -->
+                <div class="youtube-box">
+                    <a href="https://www.youtube.com/watch?v=MBIIKCaK5PM">
+                    <button type="button" class="youtube-link">See Four Weddings and a Funeral scene </button>
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- Location navigation -->
+            <nav class="location-navigation">
+            <button type="button" id="btn-prev-location">&lt;&lt; Previous location</button>
+            <button type="button" id="btn-next-location">Next location &gt;&gt;</button>
+</nav>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="" alt="logo" title="Logo">
+                    <p>2026 <i class="material-icons" style="font-size:1em">copyright</i> Alma Mater Studiorum - Università di Bologna</p>
+                </div>
+                <div class="col-sm-2 d-flex flex-column">
+                    <h5>Narratives</h5>
+                    <a class="narlink" href="../timeTravel.html" title="Time Travel">Time Travel</a>
+                    <a class="narlink" href="../lovestories.html" title="Love Stories">Love Stories</a>
+                    <a class="narlink" href="childhood.html" title="Back to Childhood">Back to Childhood</a>
+                </div>
+                <div class="col-sm-2 d-flex flex-column">
+                    <h5>Themes</h5>
+                    <p>English renaissance</p>
+                    <p>Early 1900s</p>
+                    <p>90s-00s Newspaper</p>
+                    <p>Future</p>
+                </div>
+                <div class="col-sm-2 d-flex flex-column">
+                    <a class="foolink" href="../documentation.html" title="Documentation">Documentation</a>
+                    <a class="foolink" href="../disclaimer.html" title="Disclaimer">Disclaimer</a>
+                    <a class="foolink" href="../about.html" title="About">About</a>
+                </div>
+                <div class="col-sm-4 text-sm-end">
+                    <h5>Contacts</h5>
+                    <p>Angela Paganini</p>
+                    <a href="mailto:angela.paganini@studio.unibo.it" target="_blank" title="Write an email"><i class="material-icons" style="font-size:2em">email</i></a>
+                    <a href="https://github.com/Angela-uni" target="_blank" title="GitHub profile"><i class="fa fa-github" style="font-size:2em"></i></a>
+                    <p>Susanna Valentini</p>
+                    <a href="mailto:susanna.valentini@studio.unibo.it" target="_blank" title="Write an email"><i class="material-icons" style="font-size:2em">email</i></a>
+                    <a href="https://github.com/SusannaV14" target="_blank" title="GitHub profile"><i class="fa fa-github" style="font-size:2em"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
