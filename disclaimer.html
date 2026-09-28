@@ -13,35 +13,47 @@
     <body>
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Logo</a>
-                <ul class="navbar-nav mx-auto"> <!--You can find it in the W3School tutorial for Bootstrap 5 under "BS5 Utilities"-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Narratives</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="timeTravel.html">Time Travel</a></li>
-                            <li><a class="dropdown-item" href="lovestories.html">Love Stories</a></li>
-                            <li><a class="dropdown-item" href="childhood.html">Back to Childhood</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Themes</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">English renaissance</a></li>
-                            <li><a class="dropdown-item" href="#">Early 1900s</a></li>
-                            <li><a class="dropdown-item" href="#">90s-00s Newspaper</a></li>
-                            <li><a class="dropdown-item" href="#">Future</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="documentation.html" title="Dropdown">Documentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="disclaimer.html" title="Disclaimer">Disclaimer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" title="About">About</a>
-                    </li>
-                </ul>
+                <!-- Logo a sinistra (altezza limitata) -->
+                <a class="navbar-brand" href="index.html">
+                <img src="imgs/logo2.png" alt="logo" title="Homepage" height="40">
+                </a>
+
+                <!-- Bottone Toggler per dispositivi mobili -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu centrato -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Narratives</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="timeTravel.html">Time Travel</a></li>
+                                <li><a class="dropdown-item" href="lovestories.html">Love Stories</a></li>
+                                <li><a class="dropdown-item" href="childhood.html">Back to Childhood</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Themes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English renaissance</a></li>
+                                <li><a class="dropdown-item" href="#">Early 1900s</a></li>
+                                <li><a class="dropdown-item" href="#">90s-00s Newspaper</a></li>
+                                <li><a class="dropdown-item" href="#">Future</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="documentation.html" title="Documentation">Documentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="disclaimer.html" title="Disclaimer">Disclaimer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" title="About">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <h1 class="titolopagina">Disclaimer</h1>

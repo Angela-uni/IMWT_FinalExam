@@ -171,40 +171,132 @@ marker15.bindPopup(`
 `);
 
 var marker16 = L.marker([51.518556015389294, -0.20618526441926516]).addTo(map);
-marker16.bindPopup("27 St. Lukes Mews")
+marker16.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">27 St. Luke Mews</h3>
+        <img src="imgs/27StLukesMews.png" alt="27 St. Luke Mews" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/27StLukeMews.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker17 = L.marker([51.51531173120026, -0.20728066626958574]).addTo(map);
-marker17.bindPopup("The Travel Bookshop Gift Shop")
+marker17.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">The Travel Bookshop Gift Shop</h3>
+        <img src="imgs/TheTravelBookshop.png" alt="The Travel Bookshop Gift Shop" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/theTravelBookshop.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker18 = L.marker([51.497834759759385, -0.174604720784802]).addTo(map);
-marker18.bindPopup("Victoria and Albert Museum")
+marker18.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">Victoria and Albert Museum</h3>
+        <img src="imgs/VicAndAlbM.jpg" alt="Victoria and Albert Museum" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/VictoriaAndAlbertMuseum.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker19 = L.marker([51.50849462561429, -0.10916255363984603]).addTo(map);
-marker19.bindPopup("Oxo Gallery")
+marker19.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">Oxo Gallery</h3>
+        <img src="imgs/OxoTower.jpg" alt="Oxo Tower" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/OxoGallery.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker20 = L.marker([51.506439901518654, -0.09287482024161998]).addTo(map);
-marker20.bindPopup("8 Bedale Street")
+marker20.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">8 Bedale Street</h3>
+        <img src="imgs/8BedaleStreet.jpg" alt="8 Bedale Street" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/8BedaleStreet.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker21 = L.marker([51.51408898710483, -0.08947784537663035]).addTo(map);
-marker21.bindPopup("Montblanc Royal Exchange")
+marker21.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">Montblanc Royal Exchange</h3>
+        <img src="imgs/MontBlanc.jpg" alt="Montblanc Royal Exchange" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/MontBlanc.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker22 = L.marker([51.51891455225875, -0.09978219226747935]).addTo(map);
-marker22.bindPopup("St Bartholomew the Great")
+marker22.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">St. Bartholomew The Great</h3>
+        <img src="imgs/StBartholomewTheGreat.jpg" alt="St. Bartholomew The Great" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/StBartholomewTheGreat2.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker23 = L.marker([51.473420992572684, -0.0017086615852271445]).addTo(map);
-marker23.bindPopup("Ranger's House")
+marker23.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">Ranger's House</h3>
+        <img src="imgs/RangersHouse.jpg" alt="Ranger's House" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/RangersHouse.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker24 = L.marker([51.50376291520743, -0.13918899041859908]).addTo(map);
-marker24.bindPopup("Lancaster House")
+marker24.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">Lancaster House</h3>
+        <img src="imgs/LancasterHouse.jpg" alt="Lancaster House" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/LancasterHouse.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var marker25 = L.marker([51.5262368467917, -0.13684100390969794]).addTo(map);
-marker25.bindPopup("187 North Gower Street")
+marker25.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">187 North Gower Street</h3>
+        <img src="imgs/187NorthGowerStreet.jpg" alt="187 North Gower Street" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/187NorthGowerStreet.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
+
+var marker26 = L.marker([51.495949240496614, -0.1394185455273843]).addTo(map);
+marker26.bindPopup(`
+    <div style="text-align: center; max-width: 200px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px;">Westminster Cathedral</h3>
+        <img src="imgs/westminster.jpg" alt="Westminster" style="width: 100%; height: 120px; margin-bottom: 8px;">
+        <a href="locations/westminster.html" style="display: inline-block">
+            Discover more
+        </a>
+    </div>
+`);
 
 var markerGroup = L.featureGroup([
     marker1, marker2, marker3, marker4, marker5,
     marker6, marker7, marker8, marker9, marker10,
     marker11, marker12, marker13, marker14, marker15,
     marker16, marker17, marker18, marker19, marker20,
-    marker21, marker22, marker23,marker24, marker25
+    marker21, marker22, marker23,marker24, marker25,
+    marker26
 ]);
 map.fitBounds(markerGroup.getBounds())

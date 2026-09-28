@@ -13,35 +13,47 @@
     <body>
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Logo</a>
-                <ul class="navbar-nav mx-auto"> <!--You can find it in the W3School tutorial for Bootstrap 5 under "BS5 Utilities"-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Narratives</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="timeTravel.html">Time Travel</a></li>
-                            <li><a class="dropdown-item" href="lovestories.html">Love Stories</a></li>
-                            <li><a class="dropdown-item" href="childhood.html">Back to Childhood</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Themes</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">English renaissance</a></li>
-                            <li><a class="dropdown-item" href="#">Early 1900s</a></li>
-                            <li><a class="dropdown-item" href="#">90s-00s Newspaper</a></li>
-                            <li><a class="dropdown-item" href="#">Future</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="documentation.html" title="Documentation">Documentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="disclaimer.html" title="Disclaimer">Disclaimer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" title="About">About</a>
-                    </li>
-                </ul>
+                <!-- Logo a sinistra (altezza limitata) -->
+                <a class="navbar-brand" href="index.html">
+                <img src="imgs/logo2.png" alt="logo" title="Homepage" height="40">
+                </a>
+
+                <!-- Bottone Toggler per dispositivi mobili -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu centrato -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Narratives</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="timeTravel.html">Time Travel</a></li>
+                                <li><a class="dropdown-item" href="lovestories.html">Love Stories</a></li>
+                                <li><a class="dropdown-item" href="childhood.html">Back to Childhood</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Themes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English renaissance</a></li>
+                                <li><a class="dropdown-item" href="#">Early 1900s</a></li>
+                                <li><a class="dropdown-item" href="#">90s-00s Newspaper</a></li>
+                                <li><a class="dropdown-item" href="#">Future</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="documentation.html" title="Documentation">Documentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="disclaimer.html" title="Disclaimer">Disclaimer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" title="About">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <h1>Time Travel</h1>
@@ -93,46 +105,56 @@
                 </div>
             </div>
         <div>
-            <h3><a href="locations/StBartholomewTheGreat2.html">1. St. Bartholomew The Great</a></h3>
+            <h3><a href="locations/StBartholomewTheGreat2.html" title="St. Bartholomew The Great">1. St. Bartholomew The Great</a></h3>
             <img src="imgs/StBartholomewTheGreat.jpg" alt="St Bartholomew the Great" title="St Bartholomew the Great">
         </div>
         <div>
-            <h3>2. Westminster Cathedral</h3>
+            <h3><a href="locations/westminster.html" title="Westminster Cathedral">2. Westminster Cathedral</a></h3>
+            <img src="imgs/westminster.jpg" alt="Westminster Cathedral" title="Westminster Cathedral">
         </div>
         <div>
-            <h3>3. Buckingham Palace</h3>
+            <h3><a href="locations/drapers_hall.html" title="Draper's Hall">3. Draper's Hall</a></h3>
+            <img src="imgs/drapers_hall.jpg" alt="Draper's Hall" title="Draper's Hall">
         </div>
         <div>
-            <h3><a href="locations/LancasterHouse.html">4. Lancaster House</a></h3>
+            <h3><a href="locations/buck2.html" title="Buckingham Palace">4. Buckingham Palace</a></h3>
+            <img src="imgs/buckingham_palace.jpg" alt="Buckingham Palace" title="Buckingham Palace">
+        </div>
+        <div>
+            <h3><a href="locations/LancasterHouse.html" title="Lancaster House">5. Lancaster House</a></h3>
             <img src="imgs/LancasterHouse2.jpg" alt="Lancaster House" title="Lancaster House">
+        </div>        
+        <div>
+            <h3><a href="locations/trafalgar_square.html" title="Trafalagar Square">6. Trafalgar Square</a></h3>
+            <img src="imgs/trafalgar_square.jpg" alt="Trafalgar Square" title="Trafalgar Square">
         </div>
         <div>
-            <h3>5. Trafalgar Square</h3>
-        </div>
-        <div>
-            <h3>6. King's Cross Station</h3>
+            <h3><a href="locations/kings_cross_station.html" title="King's Cross Station">7. King's Cross Station</a></h3>
+            <img src="imgs/kings_cross_station.jpg" alt="King's Cross Station" title="King's Cross Station">
         </div>
        <div>
-            <h3>7. Alice's Antiques</h3>
+            <h3><a href="locations/alice_antiques.html" title="Alice's Antiques">8. Alice's Antiques</a></h3>
+            <img src="imgs/alice_antiques.jpg" alt="Alice's Antiques" title="Alice's Antiques">
        </div>
        <div>
-            <h3><a href="locations/27StLukeMews.html">8. 27 St. Luke's Mews</a></h3>
-            <img src="imgs/27StLukesMews.png" alt="27 St. Lukes Mews" title="27 St Lukes Mews">
+            <h3><a href="locations/27StLukeMews.html" title="27 St. Luke's Mews">9. 27 St. Luke's Mews</a></h3>
+            <img src="imgs/27StLukesMews.png" alt="27 St. Lukes Mews" title="27 St. Lukes Mews">
        </div>
        <div>
-            <h3><a href="locations/theTravelBookshop.html">9. The Travel Bookshop Gift Shop</a></h3>
+            <h3><a href="locations/theTravelBookshop.html" title="The Travel Bookshop">10. The Travel Bookshop Gift Shop</a></h3>
             <img src="imgs/TheTravelBookshop.png" alt="the Travel Bookshop" title="the Travel Bookshop">
        </div> 
         <div>
-            <h3><a href="locations/187NorthGowerStreet.html">10. North Gower Street</a></h3>
+            <h3><a href="locations/187NorthGowerStreet.html" title="187 North Gower Street">11. 187 North Gower Street</a></h3>
             <img src="imgs/187NorthGowerStreet.jpg" alt="187 North Gower street" title="187 North Gower street">
         </div>
         <div>
-            <h3>11. Natural History Museum</h3>
+            <h3><a href="locations/natural_history_museum.html" title="Natural History Museum">12. Natural History Museum</a></h3>
+            <img src="imgs/natural_history_museum.jpg" alt="Natural History Museum" title="Natural History Museum">
         </div>
         <div>
-            <h3><a href="locations/VictoriaAndAlbertMuseum.html">12. Victoria and Albert Museum</a></h3>
-            <img src="imgs/VicAndAlbM.jpg" alt="Victoria and Albert Museum" title="Victoria and ALbert Museum">
+            <h3><a href="locations/VictoriaAndAlbertMuseum.html" title="Victoria and Albert Museum">13. Victoria and Albert Museum</a></h3>
+            <img src="imgs/VicAndAlbM.jpg" alt="Victoria and Albert Museum" title="Victoria and Albert Museum">
         </div>
         <footer>
             <div class="row">
