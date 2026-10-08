@@ -59,3 +59,38 @@ function selectStep(index) {
     card.style.transform = 'translateY(0)';
   }, 150);
 }
+
+// SWITCH THEME
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Recupera il tema salvato nel browser, altrimenti usa quello di default
+    const savedTheme = localStorage.getItem("selected-theme") || "early1900";
+    setTheme(savedTheme);
+
+    // 2. Aggiunge l'evento di click su tutti i link di cambio tema
+    const themeOptions = document.querySelectorAll(".theme-option");
+    
+    themeOptions.forEach(option => {
+        option.addEventListener("click", (e) => {
+            e.preventDefault(); // Impedisce il comportamento di default del link (#)
+            const selectedTheme = option.getAttribute("data-theme");
+            setTheme(selectedTheme);
+        });
+    });
+});
+
+// Funzione principale per cambiare tema
+function setTheme(themeName) {
+    // Rimuove eventuali classi di temi precedenti applicati al body
+    document.body.classList.forEach(className => {
+        if (className.startsWith("theme-")) {
+            document.body.classList.remove(className);
+        }
+    });
+
+    // Aggiunge la nuova classe (es. "theme-future")
+    document.body.classList.add(`theme-${themeName}`);
+
+    // Salva la scelta dell'utente per le sessioni/pagine successive
+    localStorage.setItem("selected-theme", themeName);
+}

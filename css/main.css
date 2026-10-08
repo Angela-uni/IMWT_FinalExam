@@ -16,13 +16,22 @@
     --bs-body-font-family: var(--font-family);
 }
 
+/* TEMA 1 1910s */
+
+body.theme-early1900 {
+    --bg-color: white;
+    --text-color: #18166B;
+    --primary-color: #C41C00;
+    --font-family: "Goudy Bookletter 1911", serif;
+}
+
 /* TEMA 2 = ENGLISH RENAISSANCE */
 
 
 /* TEMA 3 = 90-00 NEWSPAPER */
 
 /* TEMA 4 = FUTURE */
-body.future {
+body.theme-future {
     --bg-color: #212020;
     --text-color: #F0EEE9;
     --primary-color: black;
@@ -36,13 +45,17 @@ body {
     font-family: var(--font-family);
 }
 
-.navbar, .dropdown-menu, footer {
-    background-color: var(--text-color);
-    color: var(--primary-color);
+.navbar {
+    background-color: var(--text-color)
 }
 
-a {
+a, a.nav-link, a.dropdown-item {
     color: var(--primary-color)
+}
+
+footer {
+    background-color: var(--text-color);
+    color: var(--primary-color);
 }
 
 /* LAYOUT AND POSITIONING */
