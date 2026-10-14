@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap");
-/* aggiungi i tuoi */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IM+Fell+English:ital@0;1&display=swap');
 
 
 /* TEMA 1 = DEFAULT (per ora ho messo il mio di inizio 1900)*/
@@ -26,9 +27,21 @@ body.theme-early1900 {
 }
 
 /* TEMA 2 = ENGLISH RENAISSANCE */
+body.theme-renaissance {
+    --bg-color: #F5F0EB;
+    --text-color: #1E3A2B;
+    --primary-color: #C5A059;
+    --font-family: "IM Fell English", serif;
+}
 
 
 /* TEMA 3 = 90-00 NEWSPAPER */
+body.theme-newspaper {
+    --bg-color: #F4F1EA;
+    --text-color: #111111;
+    --primary-color: #CCCCCC;
+    --font-family: "Bodoni Moda", serif;
+}
 
 /* TEMA 4 = FUTURE */
 body.theme-future {
@@ -51,6 +64,10 @@ body {
 
 a, a.nav-link, a.dropdown-item {
     color: var(--primary-color)
+}
+
+a:link {
+    text-decoration: none;
 }
 
 footer {
