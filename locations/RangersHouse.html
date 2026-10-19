@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
                 <!-- Logo a sinistra (altezza limitata) -->
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.html">
                 <img src="../imgs/logo2.png" alt="logo" title="Homepage" height="40">
                 </a>
 
@@ -31,28 +31,28 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Narratives</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="timeTravel.html">Time Travel</a></li>
-                                <li><a class="dropdown-item" href="lovestories.html">Love Stories</a></li>
-                                <li><a class="dropdown-item" href="childhood.html">Back to Childhood</a></li>
+                                <li><a class="dropdown-item" href="../timeTravel.html">Time Travel</a></li>
+                                <li><a class="dropdown-item" href="../lovestories.html">Love Stories</a></li>
+                                <li><a class="dropdown-item" href="../childhood.html">Back to Childhood</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Themes</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">English renaissance</a></li>
-                                <li><a class="dropdown-item" href="#">Early 1900s</a></li>
-                                <li><a class="dropdown-item" href="#">90s-00s Newspaper</a></li>
-                                <li><a class="dropdown-item" href="#">Future</a></li>
+                                <li><a class="dropdown-item theme-option" href="#" data-theme="renaissance">English renaissance</a></li>
+                                <li><a class="dropdown-item theme-option" href="#" data-theme="early1900">Early 1900s</a></li>
+                                <li><a class="dropdown-item theme-option" href="#" data-theme="newspaper">90s-00s Newspaper</a></li>
+                                <li><a class="dropdown-item theme-option" href="#" data-theme="future">Future</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="documentation.html" title="Documentation">Documentation</a>
+                            <a class="nav-link" href="../documentation.html" title="Documentation">Documentation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="disclaimer.html" title="Disclaimer">Disclaimer</a>
+                            <a class="nav-link" href="../disclaimer.html" title="Disclaimer">Disclaimer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html" title="About">About</a>
+                            <a class="nav-link" href="../about.html" title="About">About</a>
                         </li>
                     </ul>
                 </div>
@@ -128,14 +128,14 @@
                     <h5>Narratives</h5>
                     <a class="narlink" href="../timeTravel.html" title="Time Travel">Time Travel</a>
                     <a class="narlink" href="../lovestories.html" title="Love Stories">Love Stories</a>
-                    <a class="narlink" href="childhood.html" title="Back to Childhood">Back to Childhood</a>
+                    <a class="narlink" href="../childhood.html" title="Back to Childhood">Back to Childhood</a>
                 </div>
                 <div class="col-sm-2 d-flex flex-column">
                     <h5>Themes</h5>
-                    <p>English renaissance</p>
-                    <p>Early 1900s</p>
-                    <p>90s-00s Newspaper</p>
-                    <p>Future</p>
+                    <a class="foolink theme-option" href="#" data-theme="renaissance" title="English renaissance">English renaissance</a>
+                    <a class="foolink theme-option" href="#" data-theme="early1900" title="Early 1900s">Early 1900s</a>
+                    <a class="foolink theme-option" href="#" data-theme="newspaper" title="90s-00s Newspaper">90s-00s Newspaper</a>
+                    <a class="foolink theme-option" href="#" data-theme="future" title="Future">Future</a>
                 </div>
                 <div class="col-sm-2 d-flex flex-column">
                     <a class="foolink" href="../documentation.html" title="Documentation">Documentation</a>
@@ -154,5 +154,6 @@
             </div>
         </footer>
 
+        <script src="../js/main.js"></script>
     </body>
 </html>
