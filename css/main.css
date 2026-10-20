@@ -74,6 +74,41 @@ a:link {
 footer {
     background-color: var(--text-color);
     color: var(--primary-color);
+    padding: 3em 1.5rem;
+}
+
+footer .row {
+    --bs-gutter-x: 2rem;
+}
+
+footer h5, footer .same {
+    margin-bottom: 0.75rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer .same {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+footer p, footer ul {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0.75rem;
+}
+
+footer a {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+@media (min-width: 576px) {
+    footer .row > div:not(:first-child) {
+        border-left: 1px solid var(--primary-color);
+        padding-left: 1.5rem;
+    }
 }
 
 /* IMAGES */
@@ -111,7 +146,6 @@ footer {
 
 /* TITOLI */
 
-/* TIPOGRAFIA - Minimo indispensabile */
 h1, h2, h3, h4 {
     color: var(--text-color);
     font-family: var(--font-family);
