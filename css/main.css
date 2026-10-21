@@ -52,7 +52,7 @@ body.theme-future {
     --bg-color: #212020;
     --text-color: #F0EEE9;
     --primary-color: black;
-    --secondary-color: #A0A0A0;
+    --secondary-color: #696761;
     --font-family: "Inclusive Sans", sans-serif;
 }
 
@@ -219,4 +219,107 @@ p, ul {
     text-align: justify;
     padding-left: 3em;
     padding-right: 3em;
+}
+
+/* --- ANIMAZIONI SEMPLICI PER L'HEADER --- */
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px); /* Parte più in alto */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Parte più in basso */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header a tutto schermo con immagine di sfondo e overlay colorato */
+header.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgs/principal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3rem 1rem 4rem 1rem;
+    overflow: hidden;
+}
+
+/* Overlay colorato basato sulla variabile del tema (--secondary-color) */
+header.hero-section .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    opacity: 0.75;
+    z-index: 1;
+}
+
+/* Contenitore del titolo al centro */
+header.hero-section .hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+
+/* Titolo: appare scendendo dall'alto */
+header.hero-section .hero-title {
+    color: var(--text-color);
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+    /* Animazione semplice da 1 secondo */
+    animation: fadeInDown 1s ease forwards;
+}
+
+/* Bottone: appare salendo dal basso, con un piccolo ritardo (0.3s) */
+header.hero-section .hero-footer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+    /* Animazione semplice da 1 secondo con leggero ritardo */
+    animation: fadeInUp 1s ease 0.3s forwards;
+}
+
+/* Stile del bottone coerente con i temi */
+header.hero-section .btn {
+    color: var(--bg-color);
+    border-color: var(--bg-color);
+    font-family: var(--font-family);
+}
+
+header.hero-section .btn:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
 }
