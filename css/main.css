@@ -7,8 +7,9 @@
 /* TEMA 1 = DEFAULT */
 :root {
     --bg-color: white;
-    --text-color: #18166B;
+    --text-color: #1B2A4A;
     --primary-color: #C41C00;
+    --secondary-color: #C41C00;
     --font-family: "Goudy Bookletter 1911", serif;
 
     /* sovrascrittura variabili di Bootstrap */
@@ -21,8 +22,9 @@
 
 body.theme-early1900 {
     --bg-color: white;
-    --text-color: #18166B;
+    --text-color: #1B2A4A;
     --primary-color: #C41C00;
+    --secondary-color: #C41C00;
     --font-family: "Goudy Bookletter 1911", serif;
 }
 
@@ -31,6 +33,7 @@ body.theme-renaissance {
     --bg-color: #F5F0EB;
     --text-color: #1E3A2B;
     --primary-color: #C5A059;
+    --secondary-color: #7A633B; /* MODIFICA CON QUELLO CHE VUOI */
     --font-family: "IM Fell English", serif;
 }
 
@@ -40,6 +43,7 @@ body.theme-newspaper {
     --bg-color: #F4F1EA;
     --text-color: #111111;
     --primary-color: #CCCCCC;
+    --secondary-color: #333333; /* MODIFICA CON QUELLO CHE VUOI */
     --font-family: "Bodoni Moda", serif;
 }
 
@@ -48,6 +52,7 @@ body.theme-future {
     --bg-color: #212020;
     --text-color: #F0EEE9;
     --primary-color: black;
+    --secondary-color: #A0A0A0;
     --font-family: "Inclusive Sans", sans-serif;
 }
 
@@ -63,13 +68,20 @@ body {
     background-color: var(--text-color)
 }
 
-a, a.nav-link, a.dropdown-item {
-    color: var(--primary-color)
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 a:link {
     text-decoration: none;
 }
+
+.navbar a.nav-link, 
+.navbar a.dropdown-item {
+    color: var(--primary-color);
+}
+
 
 footer {
     background-color: var(--text-color);
@@ -109,6 +121,28 @@ footer a {
         border-left: 1px solid var(--primary-color);
         padding-left: 1.5rem;
     }
+}
+
+/* 1. Link principali della navbar in hover */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active,
+.navbar .show > .nav-link {
+    color: var(--primary-color) !important;
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* 2. Voci dei dropdown per i primi 3 temi (usano il text-color in hover) */
+body:not(.theme-future) .dropdown-menu .dropdown-item:hover {
+    background-color: var(--text-color) !important;
+    color: var(--bg-color) !important;
+}
+
+/* 3. Voci dei dropdown specificamente per il tema "Future" (usano il primary-color) */
+body.theme-future .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
 }
 
 /* IMAGES */
