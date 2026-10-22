@@ -300,3 +300,169 @@ var markerGroup = L.featureGroup([
     marker26
 ]);
 map.fitBounds(markerGroup.getBounds())
+
+var locations = [
+    { 
+        marker: marker1, 
+        narratives: ["timeTravel", "childhood"],
+        films: ["paddington"]
+    },
+    { 
+        marker: marker2, 
+        narratives: ["timeTravel", "childhood"],
+        films: ["paddington"]
+    },
+    { 
+        marker: marker3, 
+        narratives: ["childhood", "timeTravel"],
+        films: ["paddington", "crown"]
+    },
+    { 
+        marker: marker4, 
+        narratives: ["childhood"],
+        films: ["dalmatians"]
+    },
+    { 
+        marker: marker5, 
+        narratives: ["childhood"],
+        films: ["paddington"]
+    },
+    { 
+        marker: marker6, 
+        narratives: ["childhood", "timeTravel"],
+        films: ["dalmatians"]
+    },
+    { 
+        marker: marker7, 
+        narratives: ["childhood"],
+        films: ["harrypotter"]
+    },
+    { 
+        marker: marker8, 
+        narratives: ["childhood"],
+        films: ["harrypotter"]
+    },
+    { 
+        marker: marker9, 
+        narratives: ["childhood"],
+        films: ["harrypotter"]
+    },
+    { 
+        marker: marker10, 
+        narratives: ["childhood"],
+        films: ["marypoppins"]
+    },
+    { 
+        marker: marker11, 
+        narratives: ["childhood"],
+        films: ["marypoppins"]
+    },
+    { 
+        marker: marker12, 
+        narratives: ["timeTravel"],
+        films: ["kingspeech"]
+    },
+    { 
+        marker: marker13, 
+        narratives: ["childhood"],
+        films: ["dalmatians"]
+    },
+    { 
+        marker: marker14, 
+        narratives: ["childhood"],
+        films: ["harrypotter"]
+    },
+    { 
+        marker: marker15, 
+        narratives: ["childhood", "timeTravel"],
+        films: ["harrypotter"]
+    },
+    { 
+        marker: marker16, 
+        narratives: ["lovestories", "timeTravel"],
+        films: ["loveactually"]
+    },
+    { 
+        marker: marker17, 
+        narratives: ["lovestories", "timeTravel"],
+        films: ["nottinghill"]
+    },
+    { 
+        marker: marker18, 
+        narratives: ["lovestories", "timeTravel"],
+        films: ["redwhiteblue"]
+    },
+    { 
+        marker: marker19, 
+        narratives: ["lovestories"],
+        films: ["loveactually"]
+    },
+    { 
+        marker: marker20, 
+        narratives: ["lovestories"],
+        films: ["diary"]
+    },
+    { 
+        marker: marker21, 
+        narratives: ["lovestories"],
+        films: ["diary"]
+    },
+    { 
+        marker: marker22, 
+        narratives: ["lovestories", "timeTravel"],
+        films: ["fourweddings", "robinhood"]
+    },
+    { 
+        marker: marker23, 
+        narratives: ["lovestories"],
+        films: ["bridgerton"]
+    },
+    { 
+        marker: marker24, 
+        narratives: ["timeTravel"],
+        films: ["crown"]
+    },
+    { 
+        marker: marker25, 
+        narratives: ["timeTravel"],
+        films: ["sherlock"]
+    },
+    { 
+        marker: marker26, 
+        narratives: ["timeTravel"],
+        films: ["elizabeth"]
+    }
+];
+
+function applyFilters() {
+    var selectedNarrative = document.getElementById('narrativeFilter').value;
+    var selectedFilm = document.getElementById('filmFilter').value;
+    
+    var currentGroup = L.featureGroup();
+
+    locations.forEach(function(item) {
+        // Controlla se rispetta il filtro narrativa
+        var matchNarrative = (selectedNarrative === 'all' || item.narratives.includes(selectedNarrative));
+        
+        // Controlla se rispetta il filtro film
+        var matchFilm = (selectedFilm === 'all' || item.films.includes(selectedFilm));
+
+        // Il marker viene mostrato solo se soddisfa entrambi i filtri attivi
+        if (matchNarrative && matchFilm) {
+            item.marker.addTo(map);
+            currentGroup.addLayer(item.marker);
+        } else {
+            map.removeLayer(item.marker);
+        }
+    });
+
+    if (currentGroup.getLayers().length > 0) {
+        map.fitBounds(currentGroup.getBounds());
+    }
+}
+
+document.getElementById('narrativeFilter').addEventListener('change', applyFilters);
+document.getElementById('filmFilter').addEventListener('change', applyFilters);
+
+// All'avvio mostra tutto
+applyFilters();

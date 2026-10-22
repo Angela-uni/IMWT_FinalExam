@@ -199,7 +199,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 h4 {
@@ -322,4 +322,76 @@ header.hero-section .btn {
 header.hero-section .btn:hover {
     background-color: var(--text-color);
     color: var(--secondary-color);
+}
+
+/* --- ANIMAZIONI A INCROCIO CON SCROLL (PIÙ LENTE E FLUIDE) --- */
+
+@keyframes narrativeSlideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* Leggermente più ampio per dare respiro al movimento lento */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes narrativeSlideRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes contentFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stato iniziale */
+.narrative-row-left,
+.narrative-row-right {
+    opacity: 0;
+}
+
+/* Durata portata a 1.6 secondi per un movimento molto più morbido e lento */
+.narrative-row-left.animate {
+    animation: narrativeSlideLeft 1.6s ease forwards;
+}
+
+.narrative-row-right.animate {
+    animation: narrativeSlideRight 1.6s ease forwards;
+}
+
+/* Stato iniziale del contenuto */
+.narrative-content {
+    opacity: 0;
+}
+
+/* Durata di 1.2 secondi e ritardo aumentato a 0.6s per far seguire il testo fluidamente */
+.narrative-row-left.animate .narrative-content,
+.narrative-row-right.animate .narrative-content {
+    animation: contentFadeIn 1.2s ease 0.6s forwards; 
+}
+
+/* --- LINEA DI SEPARAZIONE TRA LE NARRATIVES --- */
+.narrative-divider {
+    border: none;
+    height: 2px;
+    background-color: var(--secondary-color);
+    opacity: 0.6; /* Leggermente trasparente per un effetto più elegante */
+    width: 80%;   /* Lascia i lati leggermente più corti, oppure metti 100% se la vuoi a tutta pagina */
+    margin-left: auto;
+    margin-right: auto;
 }

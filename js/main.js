@@ -94,3 +94,32 @@ function setTheme(themeName) {
     // Salva la scelta dell'utente per le sessioni/pagine successive
     localStorage.setItem("selected-theme", themeName);
 }
+
+// Animazioni homepage
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleziona tutte le righe delle narratives
+    const narrativeRows = document.querySelectorAll('.narrative-row-left, .narrative-row-right');
+
+    // Configurazione dell'osservatore
+    const observerOptions = {
+        root: null, // usa la finestra del browser come viewport
+        threshold: 0.2 // l'animazione parte quando il 20% dell'elemento è visibile sullo schermo
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Aggiunge la classe .animate quando l'elemento entra in vista
+                entry.target.classList.add('animate');
+                // Smette di osservare l'elemento una volta animato (così l'animazione avviene una sola volta)
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Dice all'osservatore di controllare ciascuna riga
+    narrativeRows.forEach(row => {
+        observer.observe(row);
+    });
+});

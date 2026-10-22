@@ -64,11 +64,77 @@
             </div>
         </header>
         <div>
-            <h2 id="inizio" style="text-align:center">Map of the locations</h2>
+            <h2 id="inizio" style="text-align:center; padding-top: 2rem;">Map of the locations</h2>
             <p><!--inserire un testo--></p>
         </div>
-        <div class="container my-4"> <!--you can find this in W3School Bootsrap 5 Utilities-->
+        <div class="container my-4">
+            <div class="mb-3 row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <label for="narrativeFilter" class="form-label fw-bold">Narratives:</label>
+                    <select id="narrativeFilter" class="form-select">
+                        <option value="all">All</option>
+                        <option value="timeTravel">Time Travel</option>
+                        <option value="lovestories">Love Stories</option>
+                        <option value="childhood">Back to Childhood</option>
+                    </select>
+                </div>
+                <div class="col-md-5 text-center">
+                    <label for="filmFilter" class="form-label fw-bold">Films:</label>
+                    <select id="filmFilter" class="form-select">
+                        <option value="all">All</option>
+                        <option value="dalmatians">101 Dalmatians (1996)</option>
+                        <option value="bridgerton">Bridgerton (2020-current)</option>
+                        <option value="diary">Bridget Jones's Diary (2001)</option>
+                        <option value="elizabeth">Elizabeth: the Golden Age (2007)</option>
+                        <option value="fourweddings">Four Weddings and a Funeral (1994)</option>
+                        <option value="harrypotter">Harry Potter saga (2001-2011)</option>
+                        <option value="loveactually">Love Actually (2003)</option>
+                        <option value="marypoppins">Mary Poppins Returns (2018)</option>
+                        <option value="nottinghill">Notting Hill (1999)</option>
+                        <option value="paddington">Paddington (2014)</option>
+                        <option value="redwhiteblue">Red, White and Royal Blue (2023)</option>
+                        <option value="robinhood">Robin Hood - Prince of Thieves (1991)</option>
+                        <option value="sherlock">Sherlock (2010-2017)</option>
+                        <option value="crown">The Crown (2016-2023)</option>
+                        <option value="kingspeech">The King's Speech (2010)</option>
+                    </select>
+                </div>
+            </div>
             <div id="map" style="height:500px"></div>
+        </div>
+        <div>
+            <h2 style="text-align:center; padding-top: 2rem; padding-bottom: 2rem;">Discover the narratives</h2>      
+            <div class="container overflow-hidden my-5">
+                <div class="row align-items-center mb-5 narrative-row-left">
+                    <div class="col-md-6 narrative-content">
+                        <h3>Time Travel</h3>
+                        <p>Explore places that defy the boundaries of time, from the Renaissance to the present day</p>
+                    </div>
+                    <div class="col-md-6 narrative-content">
+                        <img src="imgs/timetravel.jpg" alt="Time Travel" class="img-fluid rounded catalog-img">
+                    </div>
+                </div>
+                <hr class="narrative-divider my-5">
+                <div class="row align-items-center mb-5 flex-md-row-reverse narrative-row-right">
+                    <div class="col-md-6 narrative-content">
+                        <h3>Love Stories</h3>
+                        <p>Experience the romantic atmosphere of films set in the most evocative and iconic corners of the British capital.</p>
+                    </div>
+                    <div class="col-md-6 narrative-content">
+                        <img src="imgs/lovestories.jpg" alt="Love Stories" class="img-fluid rounded catalog-img">
+                    </div>
+                </div>
+                <hr class="narrative-divider my-5">
+                <div class="row align-items-center mb-5 narrative-row-left">
+                    <div class="col-md-6 narrative-content">
+                        <h3>Back to Childhood</h3>
+                        <p>Rediscover magic and wonder through films that take us straight back to childhood and the realm of imagination.</p>
+                    </div>
+                    <div class="col-md-6 narrative-content">
+                        <img src="imgs/childhood.jpg" alt="Back to Childhood" class="img-fluid rounded catalog-img">
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="row">
