@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IM+Fell+English:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=UnifrakturMaguntia&display=swap');
 
 
 /* TEMA 1 = DEFAULT */
@@ -11,6 +11,26 @@
     --primary-color: #C41C00;
     --secondary-color: #C41C00;
     --font-family: "Goudy Bookletter 1911", serif;
+    --heading-font: "Goudy Bookletter 1911", serif; /* font dei titoli */
+
+    /* colori della linea del tempo (timeTravel.html) */
+    --timeline-line-color: #CCCCCC;
+    --timeline-progress-color: var(--primary-color);
+    --timeline-dot-bg: var(--bg-color);
+    --timeline-dot-active: var(--primary-color);
+    --timeline-card-bg: var(--bg-color);
+    --timeline-card-border: var(--primary-color);
+
+    /* bottoni delle pagine location */
+    --btn-bg: transparent;
+    --btn-text: var(--text-color);
+    --btn-border: var(--secondary-color);
+    --btn-hover-bg: var(--secondary-color);
+    --btn-hover-text: var(--bg-color);
+    --btn-accent-bg: var(--secondary-color); /* bottone YouTube (pieno) */
+    --btn-accent-text: var(--bg-color);
+    --btn-font: var(--font-family);
+    --btn-radius: 4px;
 
     /* sovrascrittura variabili di Bootstrap */
     --bs-body-bg: var(--bg-color);
@@ -26,6 +46,26 @@ body.theme-early1900 {
     --primary-color: #C41C00;
     --secondary-color: #C41C00;
     --font-family: "Goudy Bookletter 1911", serif;
+    --heading-font: "Goudy Bookletter 1911", serif; /* modifica con quello che preferisci */
+
+    /* timeline: modifica come preferisci */
+    --timeline-line-color: #D9D9D9; /* modifica come preferisci */
+    --timeline-progress-color: #C41C00; /* modifica come preferisci */
+    --timeline-dot-bg: white; /* modifica come preferisci */
+    --timeline-dot-active: #C41C00; /* modifica come preferisci */
+    --timeline-card-bg: white; /* modifica come preferisci */
+    --timeline-card-border: #1B2A4A; /* modifica come preferisci */
+
+    /* bottoni: modifica come preferisci */
+    --btn-bg: transparent; /* modifica come preferisci */
+    --btn-text: #1B2A4A; /* modifica come preferisci */
+    --btn-border: #C41C00; /* modifica come preferisci */
+    --btn-hover-bg: #C41C00; /* modifica come preferisci */
+    --btn-hover-text: white; /* modifica come preferisci */
+    --btn-accent-bg: #C41C00; /* modifica come preferisci */
+    --btn-accent-text: white; /* modifica come preferisci */
+    --btn-font: "Goudy Bookletter 1911", serif; /* modifica come preferisci */
+    --btn-radius: 4px; /* modifica come preferisci */
 }
 
 /* TEMA 2 = ENGLISH RENAISSANCE */
@@ -33,8 +73,29 @@ body.theme-renaissance {
     --bg-color: #F5F0EB;
     --text-color: #1E3A2B;
     --primary-color: #C5A059;
-    --secondary-color: #7A633B; /* MODIFICA CON QUELLO CHE VUOI */
+    --secondary-color: #8B1E26; /* MODIFICA CON QUELLO CHE VUOI */
     --font-family: "IM Fell English", serif;
+    --heading-font: "IM Fell English SC", serif;
+    --ornament-font: "UnifrakturMaguntia", "IM Fell English", serif; /* capilettera e anni */
+
+    /* timeline: filetto d'oro e sigilli di ceralacca */
+    --timeline-line-color: #C5A059;
+    --timeline-progress-color: #8B1E26;
+    --timeline-dot-bg: #F5F0EB;
+    --timeline-dot-active: #8B1E26;
+    --timeline-card-bg: #FBF7EF;
+    --timeline-card-border: #C5A059;
+
+    /* bottoni: pergamena con cornice d'oro, hover bordeaux */
+    --btn-bg: #FBF7EF;
+    --btn-text: #8B1E26;
+    --btn-border: #C5A059;
+    --btn-hover-bg: #8B1E26;
+    --btn-hover-text: #F1DC9A;
+    --btn-accent-bg: #8B1E26;
+    --btn-accent-text: #F1DC9A;
+    --btn-font: "IM Fell English SC", serif;
+    --btn-radius: 2px;
 }
 
 
@@ -43,8 +104,28 @@ body.theme-newspaper {
     --bg-color: #F4F1EA;
     --text-color: #111111;
     --primary-color: #CCCCCC;
-    --secondary-color: #333333; /* MODIFICA CON QUELLO CHE VUOI */
+    --secondary-color: #002F6C; /* MODIFICA CON QUELLO CHE VUOI */
     --font-family: "Bodoni Moda", serif;
+    --heading-font: "Bodoni Moda", serif; /* modifica con quello che preferisci */
+
+    /* timeline: modifica come preferisci */
+    --timeline-line-color: #CCCCCC; /* modifica come preferisci */
+    --timeline-progress-color: #002F6C; /* modifica come preferisci */
+    --timeline-dot-bg: #F4F1EA; /* modifica come preferisci */
+    --timeline-dot-active: #111111; /* modifica come preferisci */
+    --timeline-card-bg: #FFFFFF; /* modifica come preferisci */
+    --timeline-card-border: #111111; /* modifica come preferisci */
+
+    /* bottoni: modifica come preferisci */
+    --btn-bg: transparent; /* modifica come preferisci */
+    --btn-text: #111111; /* modifica come preferisci */
+    --btn-border: #111111; /* modifica come preferisci */
+    --btn-hover-bg: #111111; /* modifica come preferisci */
+    --btn-hover-text: #F4F1EA; /* modifica come preferisci */
+    --btn-accent-bg: #002F6C; /* modifica come preferisci */
+    --btn-accent-text: #F4F1EA; /* modifica come preferisci */
+    --btn-font: "Bodoni Moda", serif; /* modifica come preferisci */
+    --btn-radius: 0; /* modifica come preferisci */
 }
 
 /* TEMA 4 = FUTURE */
@@ -54,6 +135,26 @@ body.theme-future {
     --primary-color: black;
     --secondary-color: #696761;
     --font-family: "Inclusive Sans", sans-serif;
+    --heading-font: "Inclusive Sans", sans-serif; /* modifica con quello che preferisci */
+
+    /* timeline: modifica come preferisci */
+    --timeline-line-color: #696761; /* modifica come preferisci */
+    --timeline-progress-color: #F0EEE9; /* modifica come preferisci */
+    --timeline-dot-bg: #212020; /* modifica come preferisci */
+    --timeline-dot-active: #F0EEE9; /* modifica come preferisci */
+    --timeline-card-bg: #2B2A2A; /* modifica come preferisci */
+    --timeline-card-border: #696761; /* modifica come preferisci */
+
+    /* bottoni: modifica come preferisci */
+    --btn-bg: transparent; /* modifica come preferisci */
+    --btn-text: #F0EEE9; /* modifica come preferisci */
+    --btn-border: #696761; /* modifica come preferisci */
+    --btn-hover-bg: #F0EEE9; /* modifica come preferisci */
+    --btn-hover-text: #212020; /* modifica come preferisci */
+    --btn-accent-bg: #F0EEE9; /* modifica come preferisci */
+    --btn-accent-text: #212020; /* modifica come preferisci */
+    --btn-font: "Inclusive Sans", sans-serif; /* modifica come preferisci */
+    --btn-radius: 999px; /* modifica come preferisci */
 }
 
 /* REGOLE GLOBALI CON LE VARIABILI: ANCORA DA DEFINIRE! */
@@ -182,7 +283,7 @@ body.theme-future .dropdown-menu .dropdown-item:hover {
 
 h1, h2, h3, h4 {
     color: var(--text-color);
-    font-family: var(--font-family);
+    font-family: var(--heading-font);
     margin-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -292,7 +393,7 @@ header.hero-section .hero-title {
     color: var(--text-color);
     font-size: 4rem;
     font-weight: bold;
-    font-family: var(--font-family);
+    font-family: var(--heading-font);
     padding: 0;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -394,4 +495,461 @@ header.hero-section .btn:hover {
     width: 80%;   /* Lascia i lati leggermente più corti, oppure metti 100% se la vuoi a tutta pagina */
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* --- LINEA DEL TEMPO (timeTravel.html) --- */
+/* stile base comune a tutti i temi: i colori arrivano dalle variabili --timeline-* */
+
+.timeline-wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+
+.timeline-container {
+    position: relative;
+    padding: 1rem 0;
+}
+
+/* la linea va dal centro del primo nodo (10%) al centro dell'ultimo (90%) */
+.timeline-line {
+    position: absolute;
+    top: calc(1rem + 9px); /* padding del container + metà del pallino */
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    transform: translateY(-50%);
+    background-color: var(--timeline-line-color);
+    z-index: 0;
+}
+
+/* la larghezza viene impostata dal JS (selectStep) */
+.timeline-progress {
+    width: 0;
+    height: 100%;
+    background-color: var(--timeline-progress-color);
+    transition: width 0.5s ease;
+}
+
+.timeline-nodes {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.timeline-node {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.node-dot {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid var(--timeline-line-color);
+    background-color: var(--timeline-dot-bg);
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-node:hover .node-dot {
+    transform: scale(1.15);
+}
+
+.timeline-node.active .node-dot {
+    background-color: var(--timeline-dot-active);
+    border-color: var(--timeline-dot-active);
+    transform: scale(1.3);
+}
+
+.node-label {
+    margin-top: 0.75rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.node-sublabel {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.timeline-node.active .node-label {
+    color: var(--timeline-progress-color);
+}
+
+/* card con il testo dell'epoca selezionata (opacity/transform animati dal JS) */
+.timeline-card {
+    position: relative;
+    max-width: 650px;
+    margin: 1.5rem auto 0 auto;
+    padding: 1.5rem 2rem;
+    background-color: var(--timeline-card-bg);
+    border: 1px solid var(--timeline-card-border);
+    border-radius: 6px;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* selettori dentro .timeline-card per non toccare le .card di Bootstrap (about.html) */
+.timeline-card .card-year {
+    display: block;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--timeline-progress-color);
+}
+
+.timeline-card .card-title {
+    padding: 0;
+    margin: 0.25rem 0 0.75rem 0;
+}
+
+.timeline-card .card-text {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    .node-label {
+        font-size: 0.75rem;
+    }
+
+    .node-sublabel {
+        display: none;
+    }
+}
+
+
+/* ============================================================
+   TEMA 2 = ENGLISH RENAISSANCE: DETTAGLI E DECORAZIONI
+   (tutte le regole sono sotto body.theme-renaissance,
+   quindi non toccano gli altri temi)
+   ============================================================ */
+
+/* sfondo pergamena: macchie calde e bordi leggermente bruniti */
+body.theme-renaissance {
+    background-image:
+        radial-gradient(circle at 20% 15%, rgba(197, 160, 89, 0.12), transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(139, 30, 38, 0.06), transparent 50%),
+        radial-gradient(ellipse at center, transparent 60%, rgba(120, 90, 40, 0.12) 100%);
+    background-attachment: fixed;
+}
+
+/* navbar e footer con doppio filetto d'oro */
+body.theme-renaissance .navbar {
+    border-bottom: 4px double var(--primary-color);
+}
+
+body.theme-renaissance footer {
+    border-top: 4px double var(--primary-color);
+}
+
+/* CORNICI ORNAMENTALI PER LE IMMAGINI
+   la cornice è un SVG (imgs/renaissance-frame.svg) usato come sfondo:
+   si vede nel padding attorno alla foto e non si deforma con le proporzioni */
+body.theme-renaissance .catalog-img,
+body.theme-renaissance .location-img,
+body.theme-renaissance .team-img {
+    padding: 30px; /* spazio in cui si vede la cornice */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background: url("../imgs/renaissance-frame.svg") center / 100% 100% no-repeat;
+    border: none;
+    border-radius: 0 !important; /* sovrascrive la classe "rounded" di Bootstrap */
+    filter: drop-shadow(0 4px 6px rgba(60, 40, 10, 0.3)); /* l'ombra segue gli ornamenti */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+body.theme-renaissance .catalog-img:hover,
+body.theme-renaissance .location-img:hover,
+body.theme-renaissance .team-img:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 8px 10px rgba(60, 40, 10, 0.4));
+}
+
+/* card del team (about.html) come fogli di pergamena */
+body.theme-renaissance .card {
+    background-color: var(--timeline-card-bg) !important;
+    border: 3px double var(--primary-color) !important;
+    border-radius: 0 !important;
+}
+
+/* TITOLI CON ORNAMENTI */
+body.theme-renaissance h2 {
+    text-decoration: underline double var(--primary-color);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+}
+
+body.theme-renaissance h2::before {
+    content: "❧ ";
+    color: var(--secondary-color);
+}
+
+/* CAPOLETTERA GOTICO nel testo delle pagine location */
+body.theme-renaissance .text-scroll-box p:first-of-type::first-letter {
+    float: left;
+    font-family: var(--ornament-font);
+    font-size: 3.4em;
+    line-height: 0.85;
+    color: var(--secondary-color);
+    padding-right: 0.1em;
+    margin-top: 0.05em;
+}
+
+/* LINK: sottolineatura dorata in hover */
+body.theme-renaissance a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 3px;
+}
+
+/* DIVISORE TRA LE NARRATIVES: doppio filetto con fleuron centrale */
+body.theme-renaissance .narrative-divider {
+    position: relative;
+    height: 0;
+    background: none;
+    border-top: 3px double var(--primary-color);
+    opacity: 1;
+    overflow: visible;
+}
+
+body.theme-renaissance .narrative-divider::after {
+    content: "❧";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 0 0.6em;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+}
+
+/* LINEA DEL TEMPO RINASCIMENTALE */
+
+/* doppio filetto d'oro, come le cornici dei manoscritti */
+body.theme-renaissance .timeline-line {
+    height: 7px;
+    background-color: rgba(197, 160, 89, 0.2);
+    border-top: 1px solid var(--timeline-line-color);
+    border-bottom: 1px solid var(--timeline-line-color);
+}
+
+/* i nodi sono rombi, quello attivo diventa un sigillo di ceralacca */
+body.theme-renaissance .node-dot {
+    border-radius: 0;
+    border: 2px solid var(--timeline-line-color);
+    transform: rotate(45deg);
+}
+
+body.theme-renaissance .timeline-node:hover .node-dot {
+    transform: rotate(45deg) scale(1.15);
+}
+
+body.theme-renaissance .timeline-node.active .node-dot {
+    background-color: var(--timeline-dot-active);
+    border-color: var(--timeline-line-color);
+    box-shadow:
+        0 0 0 3px var(--bg-color),
+        0 0 0 4px var(--timeline-line-color),
+        0 3px 6px rgba(60, 20, 10, 0.4);
+    transform: rotate(45deg) scale(1.35);
+}
+
+/* piccolo "stampo" dorato all'interno del sigillo */
+body.theme-renaissance .timeline-node.active .node-dot::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 1px solid #E6C97A;
+}
+
+body.theme-renaissance .node-label {
+    margin-top: 1rem;
+    font-family: var(--heading-font);
+    font-weight: normal;
+    font-size: 1.05rem;
+}
+
+body.theme-renaissance .timeline-node.active .node-label {
+    color: var(--secondary-color);
+}
+
+body.theme-renaissance .node-sublabel {
+    font-style: italic;
+}
+
+/* card come foglio di pergamena con doppia cornice d'oro */
+body.theme-renaissance .timeline-card {
+    padding: 2rem 3rem;
+    background-image: radial-gradient(ellipse at center, #FBF7EF 55%, #EFE4CC 100%);
+    border: 3px double var(--timeline-card-border);
+    outline: 1px solid var(--timeline-card-border);
+    outline-offset: -10px;
+    border-radius: 0;
+    box-shadow: 0 8px 20px rgba(60, 40, 10, 0.15);
+}
+
+/* fleuron negli angoli */
+body.theme-renaissance .timeline-card::before,
+body.theme-renaissance .timeline-card::after {
+    content: "❦";
+    position: absolute;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+body.theme-renaissance .timeline-card::before {
+    top: 14px;
+    left: 16px;
+    transform: scaleX(-1);
+}
+
+body.theme-renaissance .timeline-card::after {
+    bottom: 14px;
+    right: 16px;
+    transform: scaleY(-1);
+}
+
+body.theme-renaissance .timeline-card .card-year {
+    font-family: var(--ornament-font);
+    font-size: 2rem;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--secondary-color);
+}
+
+body.theme-renaissance .timeline-card .card-title {
+    color: var(--text-color);
+}
+
+body.theme-renaissance .timeline-card .card-text {
+    font-style: italic;
+}
+
+@media (max-width: 575px) {
+    body.theme-renaissance .timeline-card {
+        padding: 2rem 1.5rem;
+    }
+
+    body.theme-renaissance .node-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* bottoni rinascimentali: doppia cornice d'oro e maiuscoletto */
+body.theme-renaissance #btn-tell-less,
+body.theme-renaissance #btn-tell-more,
+body.theme-renaissance #btn-prev-location,
+body.theme-renaissance #btn-next-location,
+body.theme-renaissance .youtube-link {
+    border: 3px double var(--btn-border);
+    letter-spacing: 0.05em;
+}
+
+/* il bottone YouTube è un sigillo bordeaux: in hover si inverte in oro */
+body.theme-renaissance .youtube-link:hover,
+body.theme-renaissance .youtube-link:focus-visible {
+    background-color: #F1DC9A;
+    color: #8B1E26;
+    filter: none;
+}
+
+
+/* --- BOTTONI DELLE PAGINE LOCATION --- */
+/* stile base comune a tutti i temi: colori e font arrivano dalle variabili --btn-* */
+
+#btn-tell-less,
+#btn-tell-more,
+#btn-prev-location,
+#btn-next-location,
+.youtube-link {
+    padding: 0.5rem 1.25rem;
+    font-family: var(--btn-font);
+    font-size: 1rem;
+    line-height: 1.3;
+    color: var(--btn-text);
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease, filter 0.25s ease;
+}
+
+#btn-tell-less:hover,
+#btn-tell-more:hover,
+#btn-prev-location:hover,
+#btn-next-location:hover,
+#btn-tell-less:focus-visible,
+#btn-tell-more:focus-visible,
+#btn-prev-location:focus-visible,
+#btn-next-location:focus-visible {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+    transform: translateY(-1px);
+}
+
+/* contorno visibile quando si naviga con la tastiera */
+#btn-tell-less:focus-visible,
+#btn-tell-more:focus-visible,
+#btn-prev-location:focus-visible,
+#btn-next-location:focus-visible,
+.youtube-link:focus-visible {
+    outline: 2px solid var(--btn-border);
+    outline-offset: 3px;
+}
+
+/* Tell me less / Tell me more: affiancati sotto il testo */
+#btn-tell-less,
+#btn-tell-more {
+    margin: 1rem 0.5rem 0 0;
+}
+
+/* bottone YouTube: pieno, è il più importante della pagina */
+.youtube-box {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.youtube-link {
+    color: var(--btn-accent-text);
+    background-color: var(--btn-accent-bg);
+    border-color: var(--btn-accent-bg);
+}
+
+.youtube-link:hover,
+.youtube-link:focus-visible {
+    filter: brightness(0.9);
+    transform: translateY(-1px);
+}
+
+/* Previous a sinistra, Next a destra */
+.location-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 3em;
+}
+
+@media (max-width: 575px) {
+    .location-navigation {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+
+    #btn-prev-location,
+    #btn-next-location {
+        width: 100%;
+    }
 }
