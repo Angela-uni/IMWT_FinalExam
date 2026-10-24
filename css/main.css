@@ -2,16 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IM+Fell+English:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=UnifrakturMaguntia&display=swap');
+/* font del tema newspaper: titoli (Playfair), testo (Tinos = Times New Roman), testata gotica (UnifrakturCook), occhielli (Oswald) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturCook:wght@700&family=Oswald:wght@400;500;600&display=swap');
 
 
 /* TEMA 1 = DEFAULT */
 :root {
     --bg-color: white;
     --text-color: #1B2A4A;
-    --primary-color: #C41C00;
+    --primary-color: #140705;
     --secondary-color: #C41C00;
     --font-family: "Goudy Bookletter 1911", serif;
     --heading-font: "Goudy Bookletter 1911", serif; /* font dei titoli */
+    --accent-color: var(--primary-color); /* modifica come preferisci */
+    --rule-color: var(--text-color); /* modifica come preferisci */
+    --masthead-font: var(--heading-font); /* modifica come preferisci */
+    --label-font: var(--font-family); /* modifica come preferisci */
 
     /* colori della linea del tempo (timeTravel.html) */
     --timeline-line-color: #CCCCCC;
@@ -46,24 +52,30 @@ body.theme-early1900 {
     --primary-color: #C41C00;
     --secondary-color: #C41C00;
     --font-family: "Goudy Bookletter 1911", serif;
-    --heading-font: "Goudy Bookletter 1911", serif;
+    --heading-font: "Goudy Bookletter 1911", serif; /* modifica con quello che preferisci */
+    --accent-color: #C41C00; /* modifica come preferisci */
+    --rule-color: #1B2A4A; /* modifica come preferisci */
+    --masthead-font: "Goudy Bookletter 1911", serif; /* modifica come preferisci */
+    --label-font: "Goudy Bookletter 1911", serif; /* modifica come preferisci */
 
-    --timeline-line-color: #D9D9D9;
-    --timeline-progress-color: #C41C00;
-    --timeline-dot-bg: white;
-    --timeline-dot-active: #C41C00;
-    --timeline-card-bg: white;
-    --timeline-card-border: #1B2A4A;
+    /* timeline: modifica come preferisci */
+    --timeline-line-color: #D9D9D9; /* modifica come preferisci */
+    --timeline-progress-color: #C41C00; /* modifica come preferisci */
+    --timeline-dot-bg: white; /* modifica come preferisci */
+    --timeline-dot-active: #C41C00; /* modifica come preferisci */
+    --timeline-card-bg: white; /* modifica come preferisci */
+    --timeline-card-border: #1B2A4A; /* modifica come preferisci */
 
-    --btn-bg: transparent;
-    --btn-text: #1B2A4A;
-    --btn-border: #C41C00;
-    --btn-hover-bg: #C41C00;
-    --btn-hover-text: white;
-    --btn-accent-bg: #C41C00;
-    --btn-accent-text: white;
-    --btn-font: "Goudy Bookletter 1911", serif;
-    --btn-radius: 4px;
+    /* bottoni: modifica come preferisci */
+    --btn-bg: transparent; /* modifica come preferisci */
+    --btn-text: #1B2A4A; /* modifica come preferisci */
+    --btn-border: #C41C00; /* modifica come preferisci */
+    --btn-hover-bg: #C41C00; /* modifica come preferisci */
+    --btn-hover-text: white; /* modifica come preferisci */
+    --btn-accent-bg: #C41C00; /* modifica come preferisci */
+    --btn-accent-text: white; /* modifica come preferisci */
+    --btn-font: "Goudy Bookletter 1911", serif; /* modifica come preferisci */
+    --btn-radius: 4px; /* modifica come preferisci */
 }
 
 /* TEMA 2 = ENGLISH RENAISSANCE */
@@ -75,6 +87,10 @@ body.theme-renaissance {
     --font-family: "IM Fell English", serif;
     --heading-font: "IM Fell English SC", serif;
     --ornament-font: "UnifrakturMaguntia", "IM Fell English", serif; /* capilettera e anni */
+    --accent-color: #8B1E26; /* modifica come preferisci */
+    --rule-color: #C5A059; /* modifica come preferisci */
+    --masthead-font: "UnifrakturMaguntia", "IM Fell English", serif; /* modifica come preferisci */
+    --label-font: "IM Fell English SC", serif; /* modifica come preferisci */
 
     /* timeline: filetto d'oro e sigilli di ceralacca */
     --timeline-line-color: #C5A059;
@@ -98,32 +114,38 @@ body.theme-renaissance {
 
 
 /* TEMA 3 = 90-00 NEWSPAPER */
+/* ispirato ai quotidiani inglesi (The Times, The Daily Telegraph, The Guardian):
+   carta di giornale, inchiostro nero, blu notte e rosso come accenti */
 body.theme-newspaper {
-    --bg-color: #F4F1EA;
-    --text-color: #111111;
-    --primary-color: #CCCCCC;
-    --secondary-color: #002F6C;
-    --font-family: "Bodoni Moda", serif;
-    --heading-font: "Bodoni Moda", serif; /* modifica con quello che preferisci */
+    --bg-color: #F4EFE4; /* carta di giornale */
+    --text-color: #121212; /* inchiostro (anche sfondo di navbar e footer) */
+    --primary-color: #EDE7DA; /* testo chiaro su navbar e footer */
+    --secondary-color: #052962; /* blu notte del Guardian: link, h3, overlay */
+    --font-family: "Tinos", "Times New Roman", serif;
+    --heading-font: "Playfair Display", "Times New Roman", serif;
+    --accent-color: #C70000; /* rosso Times / Guardian */
+    --rule-color: #121212; /* filetti */
+    --masthead-font: "UnifrakturCook", "Times New Roman", serif; /* testata gotica alla Telegraph */
+    --label-font: "Oswald", "Arial Narrow", sans-serif; /* occhielli e sezioni */
 
-    /* timeline: modifica come preferisci */
-    --timeline-line-color: #CCCCCC; /* modifica come preferisci */
-    --timeline-progress-color: #002F6C; /* modifica come preferisci */
-    --timeline-dot-bg: #F4F1EA; /* modifica come preferisci */
-    --timeline-dot-active: #111111; /* modifica come preferisci */
-    --timeline-card-bg: #FFFFFF; /* modifica come preferisci */
-    --timeline-card-border: #111111; /* modifica come preferisci */
+    /* timeline: filetti d'inchiostro e richiami rossi */
+    --timeline-line-color: #121212;
+    --timeline-progress-color: #C70000;
+    --timeline-dot-bg: #F4EFE4;
+    --timeline-dot-active: #C70000;
+    --timeline-card-bg: #FBF8F1;
+    --timeline-card-border: #121212;
 
-    /* bottoni: modifica come preferisci */
-    --btn-bg: transparent; /* modifica come preferisci */
-    --btn-text: #111111; /* modifica come preferisci */
-    --btn-border: #111111; /* modifica come preferisci */
-    --btn-hover-bg: #111111; /* modifica come preferisci */
-    --btn-hover-text: #F4F1EA; /* modifica come preferisci */
-    --btn-accent-bg: #002F6C; /* modifica come preferisci */
-    --btn-accent-text: #F4F1EA; /* modifica come preferisci */
-    --btn-font: "Bodoni Moda", serif; /* modifica come preferisci */
-    --btn-radius: 0; /* modifica come preferisci */
+    /* bottoni: inchiostro su carta, YouTube in rosso */
+    --btn-bg: transparent;
+    --btn-text: #121212;
+    --btn-border: #121212;
+    --btn-hover-bg: #121212;
+    --btn-hover-text: #F4EFE4;
+    --btn-accent-bg: #C70000;
+    --btn-accent-text: #FFFFFF;
+    --btn-font: "Oswald", "Arial Narrow", sans-serif;
+    --btn-radius: 0;
 }
 
 /* TEMA 4 = FUTURE */
@@ -134,6 +156,10 @@ body.theme-future {
     --secondary-color: #696761;
     --font-family: "Inclusive Sans", sans-serif;
     --heading-font: "Inclusive Sans", sans-serif; /* modifica con quello che preferisci */
+    --accent-color: #F0EEE9; /* modifica come preferisci */
+    --rule-color: #696761; /* modifica come preferisci */
+    --masthead-font: "Inclusive Sans", sans-serif; /* modifica come preferisci */
+    --label-font: "Inclusive Sans", sans-serif; /* modifica come preferisci */
 
     /* timeline: modifica come preferisci */
     --timeline-line-color: #696761; /* modifica come preferisci */
@@ -854,6 +880,780 @@ body.theme-renaissance .youtube-link:hover,
 body.theme-renaissance .youtube-link:focus-visible {
     background-color: #F1DC9A;
     color: #8B1E26;
+    filter: none;
+}
+
+
+/* ============================================================
+   TEMA 3 = 90-00 NEWSPAPER: DETTAGLI
+   (tutte le regole sono sotto body.theme-newspaper,
+   quindi non toccano gli altri temi)
+   ============================================================ */
+
+/* navbar e footer chiusi da un filetto spesso + sottile, come sotto la testata */
+body.theme-newspaper .navbar {
+    border-bottom: 5px double var(--bg-color);
+}
+
+body.theme-newspaper footer {
+    border-top: 5px double var(--bg-color);
+}
+
+/* link del footer: bianco su inchiostro, rossi in hover */
+body.theme-newspaper footer a {
+    color: #FFFFFF;
+}
+
+/* stessi :not() della regola dei link del tema, così questa vince anche sulla sottolineatura */
+body.theme-newspaper footer a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover,
+body.theme-newspaper footer a:focus-visible {
+    color: #FF4D4D; /* rosso schiarito: il #C70000 sul nero sarebbe poco leggibile */
+    text-decoration-color: #FF4D4D;
+}
+
+/* voci del dropdown della navbar: rosso su bianco */
+body.theme-newspaper .navbar a.dropdown-item {
+    color: var(--accent-color); /* #C70000 */
+}
+
+/* TITOLI: grassetto ad alto contrasto, interlinea stretta */
+body.theme-newspaper h1,
+body.theme-newspaper h2 {
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+}
+
+/* h2 come titolo di sezione: filetto sottile sopra */
+body.theme-newspaper h2 {
+    border-top: 1px solid var(--rule-color);
+    padding-top: 0.6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* h3 come "standfirst": corsivo blu */
+body.theme-newspaper h3 {
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* TESTO: colonne giustificate con sillabazione */
+body.theme-newspaper p {
+    hyphens: auto;
+}
+
+/* CAPOLETTERA su tre righe nel testo delle pagine location */
+body.theme-newspaper .text-scroll-box p:first-of-type::first-letter {
+    float: left;
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 3.6em;
+    line-height: 0.8;
+    color: var(--text-color);
+    padding: 0.05em 0.08em 0 0;
+}
+
+/* LINK: sottolineatura rossa in hover */
+body.theme-newspaper a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+/* IMMAGINI come foto stampate: bordo d'inchiostro, leggermente desaturate */
+body.theme-newspaper .catalog-img,
+body.theme-newspaper .location-img,
+body.theme-newspaper .team-img {
+    border: 1px solid var(--rule-color);
+    border-radius: 0 !important; /* sovrascrive la classe "rounded" di Bootstrap */
+    filter: grayscale(0.35) contrast(1.05);
+    transition: filter 0.3s ease;
+}
+
+body.theme-newspaper .catalog-img:hover,
+body.theme-newspaper .location-img:hover,
+body.theme-newspaper .team-img:hover {
+    filter: none;
+}
+
+/* card del team (about.html) come ritagli di giornale */
+body.theme-newspaper .card {
+    background-color: var(--timeline-card-bg) !important;
+    border: 1px solid var(--rule-color) !important;
+    border-top: 5px double var(--rule-color) !important;
+    border-radius: 0 !important;
+}
+
+/* DIVISORE TRA LE NARRATIVES: filetto spesso + sottile con quadratino centrale */
+body.theme-newspaper .narrative-divider {
+    position: relative;
+    width: 90%;
+    height: 0;
+    background: none;
+    border-top: 5px double var(--rule-color);
+    opacity: 1;
+    overflow: visible;
+}
+
+body.theme-newspaper .narrative-divider::after {
+    content: "■";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 0 0.6em;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+/* LINEA DEL TEMPO IN STILE QUOTIDIANO */
+
+/* filetto spesso + sottile, come le righe sotto la testata */
+body.theme-newspaper .timeline-line {
+    height: 7px;
+    background-color: transparent;
+    border-top: 3px solid var(--timeline-line-color);
+    border-bottom: 1px solid var(--timeline-line-color);
+}
+
+/* l'avanzamento è una riga rossa che riempie lo spazio tra i due filetti */
+body.theme-newspaper .timeline-progress {
+    height: 3px;
+    margin-top: 0;
+}
+
+/* i nodi sono quadratini d'inchiostro */
+body.theme-newspaper .node-dot {
+    border-radius: 0;
+    border: 2px solid var(--timeline-line-color);
+}
+
+/* il nodo attivo è un quadrato rosso con un contorno staccato, come nei sommari */
+body.theme-newspaper .timeline-node.active .node-dot {
+    background-color: var(--timeline-dot-active);
+    border-color: var(--timeline-dot-active);
+    box-shadow:
+        0 0 0 3px var(--bg-color),
+        0 0 0 4px var(--timeline-line-color);
+    transform: scale(1.2);
+}
+
+/* etichette come le sezioni del giornale: maiuscolo stretto */
+body.theme-newspaper .node-label {
+    margin-top: 1rem;
+    font-family: var(--label-font);
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+body.theme-newspaper .timeline-node.active .node-label {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+body.theme-newspaper .node-sublabel {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* card come ritaglio di articolo */
+body.theme-newspaper .timeline-card {
+    padding: 1.25rem 2rem 1.75rem 2rem;
+    border: 1px solid var(--timeline-card-border);
+    border-top: 6px double var(--timeline-card-border);
+    border-radius: 0;
+    text-align: left;
+    box-shadow: 3px 4px 0 rgba(18, 18, 18, 0.12);
+}
+
+/* mini testata gotica in cima al ritaglio */
+body.theme-newspaper .timeline-card::before {
+    content: "The London Chronicle";
+    display: block;
+    font-family: var(--masthead-font);
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.9rem;
+    border-bottom: 1px solid var(--rule-color);
+}
+
+/* l'anno è l'occhiello rosso sopra il titolo */
+body.theme-newspaper .timeline-card .card-year {
+    font-family: var(--label-font);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    color: var(--accent-color);
+}
+
+body.theme-newspaper .timeline-card .card-year::before {
+    content: "■ ";
+}
+
+body.theme-newspaper .timeline-card .card-title {
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--text-color);
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule-color);
+}
+
+/* testo dell'articolo con capolettera */
+body.theme-newspaper .timeline-card .card-text {
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.55;
+}
+
+body.theme-newspaper .timeline-card .card-text::first-letter {
+    float: left;
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 0.85;
+    padding: 0.05em 0.08em 0 0;
+}
+
+@media (max-width: 575px) {
+    body.theme-newspaper .timeline-card {
+        padding: 1rem 1.25rem 1.5rem 1.25rem;
+    }
+
+    body.theme-newspaper .timeline-card .card-title {
+        font-size: 1.5rem;
+    }
+
+    body.theme-newspaper .node-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.04em;
+    }
+}
+
+/* bottoni: maiuscolo stretto con spaziatura, come le sezioni del giornale */
+body.theme-newspaper #btn-tell-less,
+body.theme-newspaper #btn-tell-more,
+body.theme-newspaper #btn-prev-location,
+body.theme-newspaper #btn-next-location,
+body.theme-newspaper .youtube-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+}
+
+/* il bottone YouTube rosso in hover diventa inchiostro */
+body.theme-newspaper .youtube-link:hover,
+body.theme-newspaper .youtube-link:focus-visible {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--bg-color);
+    filter: none;
+}
+
+
+/* ============================================================
+   TEMA 3 = 90-00 NEWSPAPER: DETTAGLI
+   (tutte le regole sono sotto body.theme-newspaper,
+   quindi non toccano gli altri temi)
+   ============================================================ */
+
+/* navbar e footer chiusi da un filetto spesso + sottile, come sotto la testata */
+body.theme-newspaper .navbar {
+    border-bottom: 5px double var(--bg-color);
+}
+
+body.theme-newspaper footer {
+    border-top: 5px double var(--bg-color);
+}
+
+/* link del footer: bianco su inchiostro, rossi in hover */
+body.theme-newspaper footer a {
+    color: #FFFFFF;
+}
+
+/* stessi :not() della regola dei link del tema, così questa vince anche sulla sottolineatura */
+body.theme-newspaper footer a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover,
+body.theme-newspaper footer a:focus-visible {
+    color: #FF4D4D; /* rosso schiarito: il #C70000 sul nero sarebbe poco leggibile */
+    text-decoration-color: #FF4D4D;
+}
+
+/* voci del dropdown della navbar: rosso su bianco */
+body.theme-newspaper .navbar a.dropdown-item {
+    color: var(--accent-color); /* #C70000 */
+}
+
+/* TITOLI: grassetto ad alto contrasto, interlinea stretta */
+body.theme-newspaper h1,
+body.theme-newspaper h2 {
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+}
+
+/* h2 come titolo di sezione: filetto sottile sopra */
+body.theme-newspaper h2 {
+    border-top: 1px solid var(--rule-color);
+    padding-top: 0.6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* h3 come "standfirst": corsivo blu */
+body.theme-newspaper h3 {
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* TESTO: colonne giustificate con sillabazione */
+body.theme-newspaper p {
+    hyphens: auto;
+}
+
+/* CAPOLETTERA su tre righe nel testo delle pagine location */
+body.theme-newspaper .text-scroll-box p:first-of-type::first-letter {
+    float: left;
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 3.6em;
+    line-height: 0.8;
+    color: var(--text-color);
+    padding: 0.05em 0.08em 0 0;
+}
+
+/* LINK: sottolineatura rossa in hover */
+body.theme-newspaper a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+/* IMMAGINI come foto stampate: bordo d'inchiostro, leggermente desaturate */
+body.theme-newspaper .catalog-img,
+body.theme-newspaper .location-img,
+body.theme-newspaper .team-img {
+    border: 1px solid var(--rule-color);
+    border-radius: 0 !important; /* sovrascrive la classe "rounded" di Bootstrap */
+    filter: grayscale(0.35) contrast(1.05);
+    transition: filter 0.3s ease;
+}
+
+body.theme-newspaper .catalog-img:hover,
+body.theme-newspaper .location-img:hover,
+body.theme-newspaper .team-img:hover {
+    filter: none;
+}
+
+/* card del team (about.html) come ritagli di giornale */
+body.theme-newspaper .card {
+    background-color: var(--timeline-card-bg) !important;
+    border: 1px solid var(--rule-color) !important;
+    border-top: 5px double var(--rule-color) !important;
+    border-radius: 0 !important;
+}
+
+/* DIVISORE TRA LE NARRATIVES: filetto spesso + sottile con quadratino centrale */
+body.theme-newspaper .narrative-divider {
+    position: relative;
+    width: 90%;
+    height: 0;
+    background: none;
+    border-top: 5px double var(--rule-color);
+    opacity: 1;
+    overflow: visible;
+}
+
+body.theme-newspaper .narrative-divider::after {
+    content: "■";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 0 0.6em;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+/* LINEA DEL TEMPO IN STILE QUOTIDIANO */
+
+/* filetto spesso + sottile, come le righe sotto la testata */
+body.theme-newspaper .timeline-line {
+    height: 7px;
+    background-color: transparent;
+    border-top: 3px solid var(--timeline-line-color);
+    border-bottom: 1px solid var(--timeline-line-color);
+}
+
+/* l'avanzamento è una riga rossa che riempie lo spazio tra i due filetti */
+body.theme-newspaper .timeline-progress {
+    height: 3px;
+    margin-top: 0;
+}
+
+/* i nodi sono quadratini d'inchiostro */
+body.theme-newspaper .node-dot {
+    border-radius: 0;
+    border: 2px solid var(--timeline-line-color);
+}
+
+/* il nodo attivo è un quadrato rosso con un contorno staccato, come nei sommari */
+body.theme-newspaper .timeline-node.active .node-dot {
+    background-color: var(--timeline-dot-active);
+    border-color: var(--timeline-dot-active);
+    box-shadow:
+        0 0 0 3px var(--bg-color),
+        0 0 0 4px var(--timeline-line-color);
+    transform: scale(1.2);
+}
+
+/* etichette come le sezioni del giornale: maiuscolo stretto */
+body.theme-newspaper .node-label {
+    margin-top: 1rem;
+    font-family: var(--label-font);
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+body.theme-newspaper .timeline-node.active .node-label {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+body.theme-newspaper .node-sublabel {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* card come ritaglio di articolo */
+body.theme-newspaper .timeline-card {
+    padding: 1.25rem 2rem 1.75rem 2rem;
+    border: 1px solid var(--timeline-card-border);
+    border-top: 6px double var(--timeline-card-border);
+    border-radius: 0;
+    text-align: left;
+    box-shadow: 3px 4px 0 rgba(18, 18, 18, 0.12);
+}
+
+/* mini testata gotica in cima al ritaglio */
+body.theme-newspaper .timeline-card::before {
+    content: "The London Chronicle";
+    display: block;
+    font-family: var(--masthead-font);
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.9rem;
+    border-bottom: 1px solid var(--rule-color);
+}
+
+/* l'anno è l'occhiello rosso sopra il titolo */
+body.theme-newspaper .timeline-card .card-year {
+    font-family: var(--label-font);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    color: var(--accent-color);
+}
+
+body.theme-newspaper .timeline-card .card-year::before {
+    content: "■ ";
+}
+
+body.theme-newspaper .timeline-card .card-title {
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--text-color);
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule-color);
+}
+
+/* testo dell'articolo con capolettera */
+body.theme-newspaper .timeline-card .card-text {
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.55;
+}
+
+body.theme-newspaper .timeline-card .card-text::first-letter {
+    float: left;
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 0.85;
+    padding: 0.05em 0.08em 0 0;
+}
+
+@media (max-width: 575px) {
+    body.theme-newspaper .timeline-card {
+        padding: 1rem 1.25rem 1.5rem 1.25rem;
+    }
+
+    body.theme-newspaper .timeline-card .card-title {
+        font-size: 1.5rem;
+    }
+
+    body.theme-newspaper .node-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.04em;
+    }
+}
+
+/* bottoni: maiuscolo stretto con spaziatura, come le sezioni del giornale */
+body.theme-newspaper #btn-tell-less,
+body.theme-newspaper #btn-tell-more,
+body.theme-newspaper #btn-prev-location,
+body.theme-newspaper #btn-next-location,
+body.theme-newspaper .youtube-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+}
+
+/* il bottone YouTube rosso in hover diventa inchiostro */
+body.theme-newspaper .youtube-link:hover,
+body.theme-newspaper .youtube-link:focus-visible {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--bg-color);
+    filter: none;
+}
+
+/* ============================================================
+   TEMA 1 = EARLY 1900s: DETTAGLI E DECORAZIONI
+   ============================================================ */
+body.theme-early1900 .navbar {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+body.theme-early1900 .catalog-img,
+body.theme-early1900 .location-img,
+body.theme-early1900 .team-img {
+    padding: 12px; /* spazio bianco interno stile passe-partout */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background: white;
+    border: 3px solid var(--text-color); /* bordo solido e pulito in Blu Navy (#1B2A4A) */
+    border-radius: 0 !important; /* angoli vivi */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.theme-early1900 .catalog-img:hover,
+body.theme-early1900 .location-img:hover,
+body.theme-early1900 .team-img:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 0px var(--primary-color);
+}
+
+body.theme-early1900 .card {
+    background-color: var(--timeline-card-bg) !important;
+    border: 2px solid var(--timeline-card-border) !important;
+    border-radius: 0 !important;
+    box-shadow: 4px 4px 0px rgba(27, 42, 74, 0.15);
+}
+
+/* TITOLI CON ORNAMENTI */
+body.theme-early1900 h2 {
+    text-decoration: underline var(--primary-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+body.theme-early1900 h2::before {
+    content: "■ ";
+    color: var(--primary-color);
+    font-size: 0.8em;
+}
+
+body.theme-early1900 .text-scroll-box p:first-of-type::first-letter {
+    float: left;
+    font-family: var(--heading-font);
+    font-size: 3.2em;
+    line-height: 0.8;
+    color: var(--primary-color);
+    padding-right: 0.12em;
+    margin-top: 0.05em;
+    font-weight: bold;
+}
+
+/* LINK: sottolineatura pulita in hover */
+body.theme-early1900 a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 3px;
+}
+
+/* LINEA DEL TEMPO (Anni '10-'30) */
+
+/* Linea pulita e industriale */
+body.theme-early1900 .timeline-line {
+    height: 4px;
+    background-color: var(--timeline-line-color);
+    border: none;
+}
+
+/* I nodi sono quadrati perfetti (stile geometrico/Art Déco) */
+body.theme-early1900 .node-dot {
+    border-radius: 0;
+    border: 2px solid var(--text-color);
+    background-color: var(--timeline-dot-bg);
+    transform: none;
+}
+
+body.theme-early1900 .timeline-node:hover .node-dot {
+    transform: scale(1.15);
+}
+
+body.theme-early1900 .timeline-node.active .node-dot {
+    background-color: var(--timeline-dot-active);
+    border-color: var(--text-color);
+    box-shadow: 
+        0 0 0 2px var(--bg-color),
+        0 0 0 4px var(--primary-color);
+    transform: scale(1.25);
+}
+
+/* Dettaglio interno al nodo attivo (quadratino concentrico) */
+body.theme-early1900 .timeline-node.active .node-dot::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border: 1px solid white;
+}
+
+body.theme-early1900 .node-label {
+    margin-top: 1rem;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+body.theme-early1900 .timeline-node.active .node-label {
+    color: var(--primary-color);
+}
+
+body.theme-early1900 .node-sublabel {
+    font-style: normal;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Card della timeline: stile manifesto tipografico */
+body.theme-early1900 .timeline-card {
+    padding: 2.5rem;
+    background-color: white;
+    border: 2px solid var(--timeline-card-border);
+    border-radius: 0;
+    box-shadow: 6px 6px 0px var(--primary-color);
+}
+
+/* Cornici angolari geometriche (sostituiscono i fleuron barocchi '❦') */
+body.theme-early1900 .timeline-card::before,
+body.theme-early1900 .timeline-card::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--primary-color);
+}
+
+body.theme-early1900 .timeline-card::before {
+    top: 10px;
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+body.theme-early1900 .timeline-card::after {
+    bottom: 10px;
+    right: 10px;
+    border-left: none;
+    border-top: none;
+}
+
+body.theme-early1900 .timeline-card .card-year {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+}
+
+body.theme-early1900 .timeline-card .card-title {
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+body.theme-early1900 .timeline-card .card-text {
+    font-style: normal;
+}
+
+@media (max-width: 575px) {
+    body.theme-early1900 .timeline-card {
+        padding: 1.5rem;
+    }
+
+    body.theme-early1900 .node-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* Bottoni in stile inizio '900: bordi netti, maiuscoletto e transizione solida */
+body.theme-early1900 #btn-tell-less,
+body.theme-early1900 #btn-tell-more,
+body.theme-early1900 #btn-prev-location,
+body.theme-early1900 #btn-next-location,
+body.theme-early1900 .youtube-link {
+    border: 2px solid var(--btn-border);
+    border-radius: var(--btn-radius);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    transition: all 0.2s ease;
+}
+
+/* Bottone YouTube / Azioni in evidenza con inversione netta dei colori */
+body.theme-early1900 .youtube-link:hover,
+body.theme-early1900 .youtube-link:focus-visible,
+body.theme-early1900 #btn-tell-more:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+    border-color: var(--btn-hover-bg);
     filter: none;
 }
 
