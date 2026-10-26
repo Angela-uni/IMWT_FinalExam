@@ -46,7 +46,7 @@ body.theme-early1900 {
     --primary-color: #C41C00;
     --secondary-color: #C41C00;
     --font-family: "Goudy Bookletter 1911", serif;
-    --heading-font: "Goudy Bookletter 1911", serif; /* modifica con quello che preferisci */
+    --heading-font: "Goudy Bookletter 1911", serif;
 
     /* timeline: modifica come preferisci */
     --timeline-line-color: #D9D9D9; /* modifica come preferisci */
@@ -73,7 +73,7 @@ body.theme-renaissance {
     --bg-color: #F5F0EB;
     --text-color: #1E3A2B;
     --primary-color: #C5A059;
-    --secondary-color: #8B1E26; /* MODIFICA CON QUELLO CHE VUOI */
+    --secondary-color: #8B1E26;
     --font-family: "IM Fell English", serif;
     --heading-font: "IM Fell English SC", serif;
     --ornament-font: "UnifrakturMaguntia", "IM Fell English", serif; /* capilettera e anni */
@@ -104,7 +104,7 @@ body.theme-newspaper {
     --bg-color: #F4F1EA;
     --text-color: #111111;
     --primary-color: #CCCCCC;
-    --secondary-color: #002F6C; /* MODIFICA CON QUELLO CHE VUOI */
+    --secondary-color: #002F6C;
     --font-family: "Bodoni Moda", serif;
     --heading-font: "Bodoni Moda", serif; /* modifica con quello che preferisci */
 
@@ -327,7 +327,7 @@ p, ul {
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-30px); /* Parte più in alto */
+        transform: translateY(-30px);
     }
     to {
         opacity: 1;
@@ -338,7 +338,7 @@ p, ul {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px); /* Parte più in basso */
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -397,8 +397,6 @@ header.hero-section .hero-title {
     padding: 0;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    
-    /* Animazione semplice da 1 secondo */
     animation: fadeInDown 1s ease forwards;
 }
 
@@ -408,8 +406,6 @@ header.hero-section .hero-footer {
     z-index: 2;
     width: 100%;
     margin-bottom: 2rem;
-    
-    /* Animazione semplice da 1 secondo con leggero ritardo */
     animation: fadeInUp 1s ease 0.3s forwards;
 }
 
@@ -426,11 +422,10 @@ header.hero-section .btn:hover {
 }
 
 /* --- ANIMAZIONI A INCROCIO CON SCROLL (PIÙ LENTE E FLUIDE) --- */
-
 @keyframes narrativeSlideLeft {
     from {
         opacity: 0;
-        transform: translateX(-100px); /* Leggermente più ampio per dare respiro al movimento lento */
+        transform: translateX(-100px);
     }
     to {
         opacity: 1;
@@ -491,8 +486,8 @@ header.hero-section .btn:hover {
     border: none;
     height: 2px;
     background-color: var(--secondary-color);
-    opacity: 0.6; /* Leggermente trasparente per un effetto più elegante */
-    width: 80%;   /* Lascia i lati leggermente più corti, oppure metti 100% se la vuoi a tutta pagina */
+    opacity: 0.6;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -500,7 +495,6 @@ header.hero-section .btn:hover {
 
 /* --- LINEA DEL TEMPO (timeTravel.html) --- */
 /* stile base comune a tutti i temi: i colori arrivano dalle variabili --timeline-* */
-
 .timeline-wrapper {
     max-width: 900px;
     margin-left: auto;
