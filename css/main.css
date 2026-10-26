@@ -48,24 +48,22 @@ body.theme-early1900 {
     --font-family: "Goudy Bookletter 1911", serif;
     --heading-font: "Goudy Bookletter 1911", serif;
 
-    /* timeline: modifica come preferisci */
-    --timeline-line-color: #D9D9D9; /* modifica come preferisci */
-    --timeline-progress-color: #C41C00; /* modifica come preferisci */
-    --timeline-dot-bg: white; /* modifica come preferisci */
-    --timeline-dot-active: #C41C00; /* modifica come preferisci */
-    --timeline-card-bg: white; /* modifica come preferisci */
-    --timeline-card-border: #1B2A4A; /* modifica come preferisci */
+    --timeline-line-color: #D9D9D9;
+    --timeline-progress-color: #C41C00;
+    --timeline-dot-bg: white;
+    --timeline-dot-active: #C41C00;
+    --timeline-card-bg: white;
+    --timeline-card-border: #1B2A4A;
 
-    /* bottoni: modifica come preferisci */
-    --btn-bg: transparent; /* modifica come preferisci */
-    --btn-text: #1B2A4A; /* modifica come preferisci */
-    --btn-border: #C41C00; /* modifica come preferisci */
-    --btn-hover-bg: #C41C00; /* modifica come preferisci */
-    --btn-hover-text: white; /* modifica come preferisci */
-    --btn-accent-bg: #C41C00; /* modifica come preferisci */
-    --btn-accent-text: white; /* modifica come preferisci */
-    --btn-font: "Goudy Bookletter 1911", serif; /* modifica come preferisci */
-    --btn-radius: 4px; /* modifica come preferisci */
+    --btn-bg: transparent;
+    --btn-text: #1B2A4A;
+    --btn-border: #C41C00;
+    --btn-hover-bg: #C41C00;
+    --btn-hover-text: white;
+    --btn-accent-bg: #C41C00;
+    --btn-accent-text: white;
+    --btn-font: "Goudy Bookletter 1911", serif;
+    --btn-radius: 4px;
 }
 
 /* TEMA 2 = ENGLISH RENAISSANCE */
@@ -859,6 +857,215 @@ body.theme-renaissance .youtube-link:focus-visible {
     filter: none;
 }
 
+/* ============================================================
+   TEMA 1 = EARLY 1900s: DETTAGLI E DECORAZIONI
+   ============================================================ */
+body.theme-early1900 .navbar {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+body.theme-early1900 .catalog-img,
+body.theme-early1900 .location-img,
+body.theme-early1900 .team-img {
+    padding: 12px; /* spazio bianco interno stile passe-partout */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background: white;
+    border: 3px solid var(--text-color); /* bordo solido e pulito in Blu Navy (#1B2A4A) */
+    border-radius: 0 !important; /* angoli vivi */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.theme-early1900 .catalog-img:hover,
+body.theme-early1900 .location-img:hover,
+body.theme-early1900 .team-img:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 0px var(--primary-color);
+}
+
+body.theme-early1900 .card {
+    background-color: var(--timeline-card-bg) !important;
+    border: 2px solid var(--timeline-card-border) !important;
+    border-radius: 0 !important;
+    box-shadow: 4px 4px 0px rgba(27, 42, 74, 0.15);
+}
+
+/* TITOLI CON ORNAMENTI */
+body.theme-early1900 h2 {
+    text-decoration: underline var(--primary-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+body.theme-early1900 h2::before {
+    content: "■ ";
+    color: var(--primary-color);
+    font-size: 0.8em;
+}
+
+body.theme-early1900 .text-scroll-box p:first-of-type::first-letter {
+    float: left;
+    font-family: var(--heading-font);
+    font-size: 3.2em;
+    line-height: 0.8;
+    color: var(--primary-color);
+    padding-right: 0.12em;
+    margin-top: 0.05em;
+    font-weight: bold;
+}
+
+/* LINK: sottolineatura pulita in hover */
+body.theme-early1900 a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 3px;
+}
+
+/* LINEA DEL TEMPO (Anni '10-'30) */
+
+/* Linea pulita e industriale */
+body.theme-early1900 .timeline-line {
+    height: 4px;
+    background-color: var(--timeline-line-color);
+    border: none;
+}
+
+/* I nodi sono quadrati perfetti (stile geometrico/Art Déco) */
+body.theme-early1900 .node-dot {
+    border-radius: 0;
+    border: 2px solid var(--text-color);
+    background-color: var(--timeline-dot-bg);
+    transform: none;
+}
+
+body.theme-early1900 .timeline-node:hover .node-dot {
+    transform: scale(1.15);
+}
+
+body.theme-early1900 .timeline-node.active .node-dot {
+    background-color: var(--timeline-dot-active);
+    border-color: var(--text-color);
+    box-shadow: 
+        0 0 0 2px var(--bg-color),
+        0 0 0 4px var(--primary-color);
+    transform: scale(1.25);
+}
+
+/* Dettaglio interno al nodo attivo (quadratino concentrico) */
+body.theme-early1900 .timeline-node.active .node-dot::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border: 1px solid white;
+}
+
+body.theme-early1900 .node-label {
+    margin-top: 1rem;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+body.theme-early1900 .timeline-node.active .node-label {
+    color: var(--primary-color);
+}
+
+body.theme-early1900 .node-sublabel {
+    font-style: normal;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Card della timeline: stile manifesto tipografico */
+body.theme-early1900 .timeline-card {
+    padding: 2.5rem;
+    background-color: white;
+    border: 2px solid var(--timeline-card-border);
+    border-radius: 0;
+    box-shadow: 6px 6px 0px var(--primary-color);
+}
+
+/* Cornici angolari geometriche (sostituiscono i fleuron barocchi '❦') */
+body.theme-early1900 .timeline-card::before,
+body.theme-early1900 .timeline-card::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--primary-color);
+}
+
+body.theme-early1900 .timeline-card::before {
+    top: 10px;
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+body.theme-early1900 .timeline-card::after {
+    bottom: 10px;
+    right: 10px;
+    border-left: none;
+    border-top: none;
+}
+
+body.theme-early1900 .timeline-card .card-year {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+}
+
+body.theme-early1900 .timeline-card .card-title {
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+body.theme-early1900 .timeline-card .card-text {
+    font-style: normal;
+}
+
+@media (max-width: 575px) {
+    body.theme-early1900 .timeline-card {
+        padding: 1.5rem;
+    }
+
+    body.theme-early1900 .node-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* Bottoni in stile inizio '900: bordi netti, maiuscoletto e transizione solida */
+body.theme-early1900 #btn-tell-less,
+body.theme-early1900 #btn-tell-more,
+body.theme-early1900 #btn-prev-location,
+body.theme-early1900 #btn-next-location,
+body.theme-early1900 .youtube-link {
+    border: 2px solid var(--btn-border);
+    border-radius: var(--btn-radius);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    transition: all 0.2s ease;
+}
+
+/* Bottone YouTube / Azioni in evidenza con inversione netta dei colori */
+body.theme-early1900 .youtube-link:hover,
+body.theme-early1900 .youtube-link:focus-visible,
+body.theme-early1900 #btn-tell-more:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+    border-color: var(--btn-hover-bg);
+    filter: none;
+}
 
 /* --- BOTTONI DELLE PAGINE LOCATION --- */
 /* stile base comune a tutti i temi: colori e font arrivano dalle variabili --btn-* */
