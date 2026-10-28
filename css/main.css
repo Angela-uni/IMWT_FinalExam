@@ -303,6 +303,26 @@ body.theme-future .dropdown-menu .dropdown-item:hover {
     margin-right: auto;
 }
 
+/* Immagini della pagina documentazione (wireframes) */
+.documentation-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 350px; /* Evita che diventino troppo alte */
+    object-fit: contain; /* Mantiene l'intera forma originale senza tagliarla */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stile delle didascalie coerente con il tema */
+.doc-caption {
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
 /* TITOLI */
 
 h1, h2, h3, h4 {
@@ -667,7 +687,8 @@ body.theme-renaissance footer {
 
 body.theme-renaissance .catalog-img,
 body.theme-renaissance .location-img,
-body.theme-renaissance .team-img {
+body.theme-renaissance .team-img,
+body.theme-renaissance .documentation-img {
     padding: 30px;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -680,7 +701,8 @@ body.theme-renaissance .team-img {
 
 body.theme-renaissance .catalog-img:hover,
 body.theme-renaissance .location-img:hover,
-body.theme-renaissance .team-img:hover {
+body.theme-renaissance .team-img:hover,
+body.theme-renaissance .documentation-img:hover {
     transform: translateY(-3px);
     filter: drop-shadow(0 8px 10px rgba(60, 40, 10, 0.4));
 }
@@ -931,7 +953,8 @@ body.theme-newspaper a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-
 
 body.theme-newspaper .catalog-img,
 body.theme-newspaper .location-img,
-body.theme-newspaper .team-img {
+body.theme-newspaper .team-img,
+body.theme-newspaper .documentation-img {
     border: 1px solid var(--rule-color);
     border-radius: 0 !important;
     filter: grayscale(0.35) contrast(1.05);
@@ -940,7 +963,8 @@ body.theme-newspaper .team-img {
 
 body.theme-newspaper .catalog-img:hover,
 body.theme-newspaper .location-img:hover,
-body.theme-newspaper .team-img:hover {
+body.theme-newspaper .team-img:hover,
+body.theme-newspaper .documentation-img:hover {
     filter: none;
 }
 
@@ -1124,7 +1148,8 @@ body.theme-early1900 .navbar {
 
 body.theme-early1900 .catalog-img,
 body.theme-early1900 .location-img,
-body.theme-early1900 .team-img {
+body.theme-early1900 .team-img,
+body.theme-early1900 .documentation-img {
     padding: 12px;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -1136,7 +1161,8 @@ body.theme-early1900 .team-img {
 
 body.theme-early1900 .catalog-img:hover,
 body.theme-early1900 .location-img:hover,
-body.theme-early1900 .team-img:hover {
+body.theme-early1900 .team-img:hover,
+body.theme-early1900 .documentation-img:hover {
     transform: translateY(-2px);
     box-shadow: 6px 6px 0px var(--primary-color);
 }
@@ -1309,6 +1335,51 @@ body.theme-early1900 .youtube-link:focus-visible {
     filter: none;
 }
 
+/* ============================================================
+   TEMA 4 = FUTURE: DETTAGLI E DECORAZIONI
+   ============================================================ */
+
+body.theme-future h2 {
+    text-decoration: underline var(--primary-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    letter-spacing: 0.03em;
+}
+
+body.theme-future a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 575px) {
+    body.future .timeline-card {
+        padding: 1.5rem;
+    }
+
+    body.future .node-label {
+        font-size: 0.8rem;
+    }
+}
+
+body.theme-future #btn-tell-less,
+body.theme-future #btn-tell-more,
+body.theme-future #btn-prev-location,
+body.theme-future #btn-next-location,
+body.theme-future .youtube-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+}
+
+body.theme-future .youtube-link:hover,
+body.theme-future .youtube-link:focus-visible {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--bg-color);
+    filter: none;
+}
 
 /* --- BOTTONI DELLE PAGINE LOCATION --- */
 #btn-tell-less,
@@ -1392,48 +1463,3 @@ body.theme-early1900 .youtube-link:focus-visible {
     }
 }
 
-/* ============================================================
-   TEMA 4 = FUTURE: DETTAGLI E DECORAZIONI
-   ============================================================ */
-
-body.theme-future h2 {
-    text-decoration: underline var(--primary-color);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
-    letter-spacing: 0.03em;
-}
-
-body.theme-future a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-brand):hover {
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
-    text-underline-offset: 3px;
-}
-
-@media (max-width: 575px) {
-    body.future .timeline-card {
-        padding: 1.5rem;
-    }
-
-    body.future .node-label {
-        font-size: 0.8rem;
-    }
-}
-
-body.theme-future #btn-tell-less,
-body.theme-future #btn-tell-more,
-body.theme-future #btn-prev-location,
-body.theme-future #btn-next-location,
-body.theme-future .youtube-link {
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.9rem;
-}
-
-body.theme-future .youtube-link:hover,
-body.theme-future .youtube-link:focus-visible {
-    background-color: var(--text-color);
-    border-color: var(--text-color);
-    color: var(--bg-color);
-    filter: none;
-}
