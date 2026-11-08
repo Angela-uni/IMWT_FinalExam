@@ -1463,3 +1463,59 @@ body.theme-future .youtube-link:focus-visible {
     }
 }
 
+/* --- Layout flessibile per i cataloghi con linea coerente con il tema --- */
+body div:has(> .catalog-img),
+.titololocation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 2rem 2rem 2rem; /* Spaziatura inferiore per la linea */
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Adattamento per il tema English Renaissance (linea doppia) */
+body.theme-renaissance div:has(> .catalog-img),
+body.theme-renaissance .titololocation {
+    border-bottom: 3px double var(--primary-color);
+}
+
+/* Adattamento per il tema 90s-00s Newspaper (linea doppia inchiostro) */
+body.theme-newspaper div:has(> .catalog-img),
+body.theme-newspaper .titololocation {
+    border-bottom: 5px double var(--rule-color);
+}
+
+/* Sistemazione del titolo e dell'immagine */
+body div:has(> .catalog-img) h3,
+.titololocation h3 {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    text-align: left;
+}
+
+body div:has(> .catalog-img) .catalog-img,
+.titololocation .catalog-img {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* Responsive per dispositivi mobili */
+@media (max-width: 768px) {
+    body div:has(> .catalog-img),
+    .titololocation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+    
+    body div:has(> .catalog-img) h3,
+    .titololocation h3 {
+        text-align: center;
+    }
+}
