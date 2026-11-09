@@ -69,9 +69,27 @@
         <p>
             The choice of London was based on the fact that, after a brief discussion between us, we noted it had served as the setting for many films we had both seen; furthermore, as a famous capital city, it attracts millions of visitors every year.
             The app's name alludes to a road connecting the locations, as requested; indeed, the project centers on narratives, predefined itineraries that link the places according to a specific logic and that the visitors can easily follow thanks to the provided maps and photos.
-            Since we would like to invite the visitor on our road, we chose the iconic London red doubledecker, that transports hundreds of people across the city every day, as our logo.
-            <!--aggiungere location, film e narrative (introduzione)-->
+            Since we would like to invite the visitor on our road, we chose the iconic London red doubledecker, that transports hundreds of people across the city every day, as our logo.<br>
+            We chose the locations that are more easily accessible to anyone, considering of course the task of the project: to have itineraries visitable in one day only. They can be found in the <a href="index.html" title="Homepage">Homepage</a>, in a practical map that can be filtered both by narrative and by film, or in the narratives pages (<a href="timeTravel.html" title="Time Travel">Time Travel</a>, <a href="lovestories.html" title="Love Stories">Love Stories</a> and <a href="childhood.html" title="Back to Childhood">Back to Childhood</a>).<br>
+            The films were chosen in tandem: we focused on the films that we watched and on the genres that we love. Susanna is a fan of romantic films, Angela gets emotional watching children's films. For the chronological narrative as well, we have chosen films that we have actually seen. Each location is linked to a film, and in cases where a location appears in multiple narratives, the film associated with it will be different, in keeping with the subject matter.<br>Here is the list of films included:
         </p>
+        <ul>
+            <li>101 Dalmatians (Stephen Herek, 1996)</li>
+            <li>Bridgerton (Chris Van Dusen, 2020-current)</li>
+            <li>Bridget Jones's Diary (Sharon Maguire, 2001)</li>
+            <li>Elizabeth: the Golden Age (Shekhar Kapur, 2007)</li>
+            <li>Four Weddings and a Funeral (Mike Newell, 1994)</li>
+            <li>Harry Potter saga (Various, 2001-2011)</li>
+            <li>Love Actually (Richard Curtis, 2003)</li>
+            <li>Mary Poppins Returns (Rob Marshall, 2018)</li>
+            <li>Notting Hill (Roger Michell, 1999)</li>
+            <li>Paddington (Paul King, 2014)</li>
+            <li>Red, White and Royal Blue ( Matthew Lopez, 2023)</li>
+            <li>Robin Hood - Prince of Thieves (Kevin Reynolds, 1991)</li>
+            <li>Sherlock (Steven Moffat, Mark Gatiss, 2010-2017)</li>
+            <li>The Crown (Peter Morgan, 2016-2023)</li>
+            <li>The King's Speech (Tom Hooper, 2010)</li>
+        </ul>
         <h2>2. Benchmark</h2>
             <p>
                 We found many websites and online sources dedicated to the same topic that we chose: they have been very useful for us too, but we noticed that they all lack something:
@@ -135,7 +153,8 @@
                 </div>
             </div>
         </div>
-        <h2 id="section4">4. Layout choices</h2> <!--Dividiere chi ha fatto cosa. Fare elenco puntato per tre: together, Susanna, Angela-->
+        <h2 id="section4">4. Layout choices</h2>
+        <!--Dividiere chi ha fatto cosa. Fare elenco puntato per tre: together, Susanna, Angela-->
         <h2 id="section5">5. Narratives</h2>
         <h4>5.1 Time Travel (Together)</h4>
         <p>
@@ -211,7 +230,26 @@
             The idea behind this is that later on the theme could be customized by the users as he likes, like a template.
             <br>The font used is called Inclusive Sans (found once again on <a href="https://fonts.google.com">Google Fonts</a>): it is a sans-serif font, designed in particular for accessibility and readability. In fact, the 21st century brought a new light on specific learning disorders, disability and situations of this kind, and going forward in time I think that it will continue to extend.
         </p>
-        <h2>7. Implementation</h2> <!--Dividiere chi ha fatto cosa-->
+        <h2>7. Implementation</h2>
+        <p>
+            The implementation of the files was made using a shared folder on Visual Studio Code and GitHub, so to see any change in real time. Even if we were in constant contact with each other to keep tracking of the work, we had to divide it as equally as possible, of course.
+            Strictly together (by videocall or by meetings in presence) we have made the logo on Canva, the wireframe of the narrative, the function <code>setTheme</code> for switching themes in JavaScript, and some adjustments in the CSS file.<br>
+            <!-- Controllare -->
+            For the other components, here is a list, divided by person:
+        </p>
+        <ul>
+            <li><i>Angela.</i><br>HTML files: <code>index.html</code>, <code>documentation.html</code>, <code>childhood.html</code>,
+                locations: <code>alice_antiques.html</code>, <code>bank_of_england.html</code>, <code>buck2.html</code>, <code>buckingham_palace.html</code>, <code>cornhill.html</code>, <code>drapers_hall.html</code>, <code>great_scotland_yard.html</code>, <code>kings_cross_station.html</code>,
+                <code>leadenhall.html</code>, <code>middle_temple_lane.html</code>, <code>minster_court.html</code>, <code>natural_history_museum.html</code>, <code>reform_club.html</code>, <code>st_james_park.html</code>, <code>st_paul.html</code>, <code>trafalgar_square.html</code>, <code>westminster.html</code>.
+                <br>CSS components: theme "Early 1900s", theme "Future", body, navbar, links, footer, titles, subtitles, paragraphs, lists, animations for the Homepage, adjustments for the images of the narratives.
+                <br>JavaScript functions: all the <code>leaflet.js</code> file, script for the animations in the Homepage.
+            </li>
+            <li><i>Susanna.</i><br>HTML files: <code>timeTravel.html</code>, <code>lovestories.html</code>, <code>disclaimer.html</code>, <code>about.html</code>, <code>8BedaleStreet.html</code>, <code>27StLukeMews.html</code>, <code>187NorthGowerStreet.html</code>, <code>LancasterHouse.html</code>, <code>MontBlanc.html</code>, 
+                <code>OxoGallery.html</code>, <code>RangersHouse.html</code>, <code>StBartholomewTheGreat.html</code>, <code>StBartholomewTheGreat2.html</code>, <code>theTravelBookshop.html</code>, <code>VictoriaAndAlbertMuseum.html</code>.
+                <br>CSS components: theme "English Renaissance", theme "90s-00s Newspaper", images' layout, timeline, cards, buttons.
+                <br>JavaScript functions: everything for the timeline.
+            </li>
+        </ul>
         <footer>
             <div class="row">
                 <div class="col-sm-2">
