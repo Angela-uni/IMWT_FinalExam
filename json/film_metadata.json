@@ -1,0 +1,14 @@
+[
+    {
+        "film_id": 1,
+        "film_name": "Robin Hood - Prince of Thieves",
+        "director": "Kevin Reynolds",
+        "year": "1991",
+        "starring": "Kevin Costner, Alan Rickman, Morgan Freeman, Mary Elizabeth Mastrantonio",
+        "duration": "143'",
+        "genre": "History, Adventure",
+        "production": "Morgan Creek Entertainment",
+        "distribution": "Warner Bros. Pictures",
+        "screenwriter": "Pen Densham, John Watson"
+    }
+]
