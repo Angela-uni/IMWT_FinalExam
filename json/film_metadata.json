@@ -10,5 +10,89 @@
         "production": "Morgan Creek Entertainment",
         "distribution": "Warner Bros. Pictures",
         "screenwriter": "Pen Densham, John Watson"
+    },
+    {
+        "film_id": 2,
+        "film_name": "Notting Hill",
+        "director": "Roger Michell",
+        "year": "1999",
+        "starring": "Julia Roberts, Hugh Grant, Richard McCabe, Rhys Ifans",
+        "duration": "124'",
+        "genre": "Comedy, Drama, Romance",
+        "production": "PolyGram Filmed Entertainment, Working Title Films",
+        "distribution": "Universal Pictures",
+        "screenwriter": "Richard Curtis"
+    },
+    {
+        "film_id": 3,
+        "film_name": "Love Actually",
+        "director": "Richard Curtis",
+        "year": "2003",
+        "starring": "Hugh Grant, Martine McCutcheon, Liam Neeson, Colin Firth, Emma Thompson, Keira Knightley, Alan Rickman",
+        "duration": "135'",
+        "genre": "Comedy, Drama, Romance",
+        "production": "Working Title Films, DNA Films",
+        "distribution": "Universal Pictures",
+        "screenwriter": "Richard Curtis"
+    },
+    {
+        "film_id": 4,
+        "film_name": "Bridget Jones's Diary",
+        "director": "Sharon Maguire",
+        "year": "2001",
+        "starring": "Renée Zellweger, Colin Firth, Hugh Grant, Jim Broadbent",
+        "duration": "97'",
+        "genre": "Comedy, Drama, Romance",
+        "production": "Working Title Films, StudioCanal, Miramax Films",
+        "distribution": "Miramax Films, Universal Pictures",
+        "screenwriter": "Helen Fielding, Andrew Davies, Richard Curtis"
+    },
+    {
+        "film_id": 5,
+        "film_name": "Sherlock",
+        "director": "Paul McGuigan, Nick Hurran, Coky Giedroyc, Toby Haynes",
+        "year": "2010-2017",
+        "starring": "Benedict Cumberbatch, Martin Freeman, Una Stubbs, Rupert Graves, Mark Gatiss, Andrew Scott",
+        "duration": "90' (per episode)",
+        "genre": "Crime, Drama, Mystery",
+        "production": "Hartswood Films, BBC Wales, Masterpiece",
+        "distribution": "BBC Studios",
+        "screenwriter": "Steven Moffat, Mark Gatiss"
+    },
+    {
+        "film_id": 6,
+        "film_name": "Bridgerton",
+        "director": "Julie Anne Robinson, Tom Verica, Alrick Riley, Cheryl Dunye",
+        "year": "2020-present",
+        "starring": "Adjoa Andoh, Julie Andrews, Jonathan Bailey, Phoebe Dynevor, Nicola Coughlan, Regé-Jean Page",
+        "duration": "60' (per episode)",
+        "genre": "Drama, History, Romance",
+        "production": "Shondaland, CVD Productions",
+        "distribution": "Netflix",
+        "screenwriter": "Chris Van Dusen"
+    },
+    {
+        "film_id": 7,
+        "film_name": "Red, White & Royal Blue",
+        "director": "Matthew López",
+        "year": "2023",
+        "starring": "Taylor Zakhar Perez, Nicholas Galitzine, Clifton Collins Jr., Sarah Shahi, Uma Thurman",
+        "duration": "118'",
+        "genre": "Comedy, Romance",
+        "production": "Berlanti-Schechter Films, Amazon MGM Studios",
+        "distribution": "Amazon Prime Video",
+        "screenwriter": "Matthew López, Ted Malawer"
+    },
+    {
+        "film_id": 8,
+        "film_name": "Four Weddings and a Funeral",
+        "director": "Mike Newell",
+        "year": "1994",
+        "starring": "Hugh Grant, Andie MacDowell, Kristin Scott Thomas, Simon Callow, John Hannah",
+        "duration": "117'",
+        "genre": "Comedy, Drama, Romance",
+        "production": "Working Title Films, PolyGram Filmed Entertainment",
+        "distribution": "Gramercy Pictures, Rank Film Distributors",
+        "screenwriter": "Richard Curtis"
     }
 ]
