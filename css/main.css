@@ -291,6 +291,16 @@ body.theme-future .dropdown-menu .dropdown-item:hover {
     object-fit: cover;
 }
 
+/* immagine dell' index */
+.index-img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
 /* foto dei membri del team (about) */
 .team-img {
     display: block;
@@ -688,6 +698,7 @@ body.theme-renaissance footer {
 body.theme-renaissance .catalog-img,
 body.theme-renaissance .location-img,
 body.theme-renaissance .team-img,
+body.theme-renaissance .index-img,
 body.theme-renaissance .documentation-img {
     padding: 30px;
     margin-top: 1rem;
@@ -702,6 +713,7 @@ body.theme-renaissance .documentation-img {
 body.theme-renaissance .catalog-img:hover,
 body.theme-renaissance .location-img:hover,
 body.theme-renaissance .team-img:hover,
+body.theme-renaissance .index-img:hover,
 body.theme-renaissance .documentation-img:hover {
     transform: translateY(-3px);
     filter: drop-shadow(0 8px 10px rgba(60, 40, 10, 0.4));
@@ -954,6 +966,7 @@ body.theme-newspaper a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-
 body.theme-newspaper .catalog-img,
 body.theme-newspaper .location-img,
 body.theme-newspaper .team-img,
+body.theme-newspaper .index-img,
 body.theme-newspaper .documentation-img {
     border: 1px solid var(--rule-color);
     border-radius: 0 !important;
@@ -964,6 +977,7 @@ body.theme-newspaper .documentation-img {
 body.theme-newspaper .catalog-img:hover,
 body.theme-newspaper .location-img:hover,
 body.theme-newspaper .team-img:hover,
+body.theme-newspaper .index-img:hover,
 body.theme-newspaper .documentation-img:hover {
     filter: none;
 }
@@ -1149,6 +1163,7 @@ body.theme-early1900 .navbar {
 body.theme-early1900 .catalog-img,
 body.theme-early1900 .location-img,
 body.theme-early1900 .team-img,
+body.theme-early1900 .index-img,
 body.theme-early1900 .documentation-img {
     padding: 12px;
     margin-top: 1rem;
@@ -1162,6 +1177,7 @@ body.theme-early1900 .documentation-img {
 body.theme-early1900 .catalog-img:hover,
 body.theme-early1900 .location-img:hover,
 body.theme-early1900 .team-img:hover,
+body.theme-early1900 .index-img:hover,
 body.theme-early1900 .documentation-img:hover {
     transform: translateY(-2px);
     box-shadow: 6px 6px 0px var(--primary-color);
