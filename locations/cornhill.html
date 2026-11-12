@@ -55,7 +55,7 @@
         </nav>
 
         <!-- LOCATION PAGE -->
-        <main>
+        <main data-film-id="17">
             <!-- Title -->
             <h1>Cornhill</h1>
 
@@ -80,19 +80,24 @@
                 <button type="button" id="btn-tell-more">Tell me more</button>
                 </div>
 
-                <!-- 3. Metadata -->
-                <!-- <div class="metadata-box">
-                    <h3>Metadata</h3>
-                    <ul>
-                        <li><strong>Name:</strong> 27 St. Lukes Mews</li>
-                        <li><strong>Coordinates:</strong> 51.51778825308398, -0.20317046158181423</li>
-                        <li><strong>Place type:</strong> street</li>
-                    </ul>
-                </div> -->
+                <!-- GRIGLIA: Metadati a sinistra e Mappa a destra -->
+                <div class="row align-items-center my-4">
+                    <!-- Colonna Sinistra: Metadata + YouTube -->
+                    <div class="col-lg-6">
+                        <div class="metadata-box">
+                            <h3>Film Metadata</h3>
+                            <ul id="metadata-list">
+                                <!-- Dinamico via JS -->
+                            </ul>
+                        </div>
+                    </div>
 
-                <!-- 4. Map -->
-                <div class="map-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1790429754931!6m8!1m7!1sTMd1aW9MaSaDAF1V_d3Wwg!2m2!1d51.51335875474307!2d-0.08648879263325994!3f314.752342584849!4f6.84060406558946!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- Colonna Destra: Mappa -->
+                    <div class="col-lg-6">
+                        <div class="map-box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1790429754931!6m8!1m7!1sTMd1aW9MaSaDAF1V_d3Wwg!2m2!1d51.51335875474307!2d-0.08648879263325994!3f314.752342584849!4f6.84060406558946!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 5. Link YouTube -->

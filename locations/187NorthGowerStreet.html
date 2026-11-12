@@ -55,7 +55,7 @@
         </nav>
 
         <!-- LOCATION PAGE -->
-        <main>
+        <main data-film-id="10">
             <!-- Title -->
             <h1>187 North Gower street</h1>
 
@@ -80,21 +80,25 @@
                 <button type="button" id="btn-tell-more">Tell me more</button>
                 </div>
 
-                <!-- 3. Metadata -->
-                <!-- <div class="metadata-box">
-                    <h3>Metadata</h3>
-                    <ul>
-                        <li><strong>Name:</strong> 187 North Gower street</li>
-                        <li><strong>Coordinates:</strong> 51.52625019681322, -0.1368839192525798</li>
-                        <li><strong>Place type:</strong> street</li>
-                    </ul>
-                </div> -->
+                <!-- GRIGLIA: Metadati a sinistra e Mappa a destra -->
+                <div class="row align-items-center my-4">
+                    <!-- Colonna Sinistra: Metadata + YouTube -->
+                    <div class="col-lg-6">
+                        <div class="metadata-box">
+                            <h3>Film Metadata</h3>
+                            <ul id="metadata-list">
+                                <!-- Dinamico via JS -->
+                            </ul>
+                        </div>
+                    </div>
 
-                <!-- 4. Map -->
-                <div class="map-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1790410765210!6m8!1m7!1soiIXfPQoSjcAAAQvxSBLhA!2m2!1d51.52625904715478!2d-0.1368692031581853!3f291.52809646123825!4f-4.750421291135609!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- Colonna Destra: Mappa -->
+                    <div class="col-lg-6">
+                        <div class="map-box">
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1790410765210!6m8!1m7!1soiIXfPQoSjcAAAQvxSBLhA!2m2!1d51.52625904715478!2d-0.1368692031581853!3f291.52809646123825!4f-4.750421291135609!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
                 </div>
-
                 <!-- 5. Link YouTube -->
                 <div class="youtube-box">
                     <a href="https://www.youtube.com/watch?v=YN7DYPJLXkc">

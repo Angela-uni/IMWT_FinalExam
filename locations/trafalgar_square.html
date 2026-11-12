@@ -55,7 +55,7 @@
         </nav>
 
         <!-- LOCATION PAGE -->
-        <main>
+        <main data-film-id="5">
             <!-- Title -->
             <h1>Trafalgar Square</h1>
 
@@ -80,19 +80,24 @@
                 <button type="button" id="btn-tell-more">Tell me more</button>
                 </div>
 
-                <!-- 3. Metadata -->
-                <!-- <div class="metadata-box">
-                    <h3>Metadata</h3>
-                    <ul>
-                        <li><strong>Name:</strong> </li>
-                        <li><strong>Coordinates:</strong> 51.51778825308398, -0.20317046158181423</li>
-                        <li><strong>Place type:</strong> street</li>
-                    </ul>
-                </div> -->
+                <!-- GRIGLIA: Metadati a sinistra e Mappa a destra -->
+                <div class="row align-items-center my-4">
+                    <!-- Colonna Sinistra: Metadata + YouTube -->
+                    <div class="col-lg-6">
+                        <div class="metadata-box">
+                            <h3>Film Metadata</h3>
+                            <ul id="metadata-list">
+                                <!-- Dinamico via JS -->
+                            </ul>
+                        </div>
+                    </div>
 
-                <!-- 4. Map -->
-                <div class="map-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1790432854731!6m8!1m7!1se7_01WZ3aOpVlIFGbDmMqA!2m2!1d51.50807379256192!2d-0.1280601411642128!3f129.54521662562843!4f-0.123148837597995!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- Colonna Destra: Mappa -->
+                    <div class="col-lg-6">
+                        <div class="map-box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1790432854731!6m8!1m7!1se7_01WZ3aOpVlIFGbDmMqA!2m2!1d51.50807379256192!2d-0.1280601411642128!3f129.54521662562843!4f-0.123148837597995!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 5. Link YouTube -->

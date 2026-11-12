@@ -55,7 +55,7 @@
         </nav>
 
         <!-- LOCATION PAGE -->
-        <main>
+        <main data-film-id="12">
             <!-- Title -->
             <h1>Montblanc Royal Exchange</h1>
 
@@ -80,19 +80,24 @@
                 <button type="button" id="btn-tell-more">Tell me more</button>
                 </div>
 
-                <!-- 3. Metadata -->
-                <!-- <div class="metadata-box">
-                    <h3>Metadata</h3>
-                    <ul>
-                        <li><strong>Name:</strong> Montblanc</li>
-                        <li><strong>Coordinates:</strong> 51.51346804117361, -0.08663470391070688</li>
-                        <li><strong>Place type:</strong> shop</li>
-                    </ul>
-                </div> -->
+                <!-- GRIGLIA: Metadati a sinistra e Mappa a destra -->
+                <div class="row align-items-center my-4">
+                    <!-- Colonna Sinistra: Metadata + YouTube -->
+                    <div class="col-lg-6">
+                        <div class="metadata-box">
+                            <h3>Film Metadata</h3>
+                            <ul id="metadata-list">
+                                <!-- Dinamico via JS -->
+                            </ul>
+                        </div>
+                    </div>
 
-                <!-- 4. Map -->
-                <div class="map-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1790409069392!6m8!1m7!1s4AkYQqd74l3OE_2FNFYBlg!2m2!1d51.51347231769512!2d-0.08638981323311712!3f277.1853679316926!4f2.7877819301337894!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- Colonna Destra: Mappa -->
+                    <div class="col-lg-6">
+                        <div class="map-box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1790409069392!6m8!1m7!1s4AkYQqd74l3OE_2FNFYBlg!2m2!1d51.51347231769512!2d-0.08638981323311712!3f277.1853679316926!4f2.7877819301337894!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 5. Link YouTube -->

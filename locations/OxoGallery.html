@@ -55,7 +55,7 @@
         </nav>
 
         <!-- LOCATION PAGE -->
-        <main>
+        <main data-film-id="8">
             <!-- Title -->
             <h1>Oxo Gallery</h1>
 
@@ -80,19 +80,24 @@
                 <button type="button" id="btn-tell-more">Tell me more</button>
                 </div>
 
-                <!-- 3. Metadata -->
-                <!-- <div class="metadata-box">
-                    <h3>Metadata</h3>
-                    <ul>
-                        <li><strong>Name:</strong> Oxo Gallery</li>
-                        <li><strong>Coordinates:</strong> 51.50839446131784, -0.10889433274683438</li>
-                        <li><strong>Place type:</strong> building</li>
-                    </ul>
-                </div> -->
+                <!-- GRIGLIA: Metadati a sinistra e Mappa a destra -->
+                <div class="row align-items-center my-4">
+                    <!-- Colonna Sinistra: Metadata + YouTube -->
+                    <div class="col-lg-6">
+                        <div class="metadata-box">
+                            <h3>Film Metadata</h3>
+                            <ul id="metadata-list">
+                                <!-- Dinamico via JS -->
+                            </ul>
+                        </div>
+                    </div>
 
-                <!-- 4. Map -->
-                <div class="map-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1790407541557!6m8!1m7!1sqoIk_Ff092u02-TPTcm5-Q!2m2!1d51.50833431702118!2d-0.109348282781649!3f37.600095354142674!4f2.678217080115175!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- Colonna Destra: Mappa -->
+                    <div class="col-lg-6">
+                        <div class="map-box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1790407541557!6m8!1m7!1sqoIk_Ff092u02-TPTcm5-Q!2m2!1d51.50833431702118!2d-0.109348282781649!3f37.600095354142674!4f2.678217080115175!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 5. Link YouTube -->
