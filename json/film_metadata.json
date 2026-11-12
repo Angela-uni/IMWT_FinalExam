@@ -13,18 +13,78 @@
     },
     {
         "film_id": 2,
-        "film_name": "Notting Hill",
-        "director": "Roger Michell",
-        "year": "1999",
-        "starring": "Julia Roberts, Hugh Grant, Richard McCabe, Rhys Ifans",
-        "duration": "124'",
-        "genre": "Comedy, Drama, Romance",
-        "production": "PolyGram Filmed Entertainment, Working Title Films",
+        "film_name": "Elizabeth: The Golden Age",
+        "director": "Shekhar Kapur",
+        "year": "2007",
+        "starring": "Cate Blanchett, Geoffrey Rush, Clive Owen",
+        "duration": "114'",
+        "genre": "History, Biography",
+        "production": "Working Title Films, StudioCanal",
         "distribution": "Universal Pictures",
-        "screenwriter": "Richard Curtis"
+        "screenwriter": "William Nicholson, Michael Hirst"
     },
     {
         "film_id": 3,
+        "film_name": "The King's Speech",
+        "director": "Tom Hooper",
+        "year": "2010",
+        "starring": "Colin Firth, Geoffrey Rush, Helena Bonham Carter, Guy Pierce",
+        "duration": "119'",
+        "genre": "History, Drama",
+        "production": "UK Film Council, Momentum Pictures",
+        "distribution": "Paramount Pictures",
+        "screenwriter": "David Seidler"
+    },
+    {
+        "film_id": 4,
+        "film_name": "The Crown",
+        "director": "Peter Morgan",
+        "year": "2016-2023",
+        "starring": "Claire Foy, Matt Smith, Olivia Colman, Tobias Menzies, Helena Bonham Carter, Imelda Staunton, Jonathan Pryce",
+        "duration": "6 seasons",
+        "genre": "History, Drama",
+        "production": "Sony Pictures Television",
+        "distribution": "Netflix",
+        "screenwriter": "Peter Morgan"
+    },
+    {
+        "film_id": 5,
+        "film_name": "101 Dalmatians",
+        "director": "Stephen Herek",
+        "year": "1996",
+        "starring": "Glenn Close, Jeff Daniels, Joely Richardson, Joan Plowright",
+        "duration": "103'",
+        "genre": "Comedy, Adventure",
+        "production": "Walt Disney Pictures, Great Oaks Entertainment",
+        "distribution": "Buena Vista Pictures Distribution",
+        "screenwriter": "John Hughes"
+    },
+    {
+        "film_id": 6,
+        "film_name": "Harry Potter and the Philosopher's Stone",
+        "director": "Chris Columbus",
+        "year": "2001",
+        "starring": "Daniel Radcliffe, Rupert Grint, Emma Watson, Maggie Smith, Alan Rickman, Julie Walters",
+        "duration": "152'",
+        "genre": "Fantasy",
+        "production": "Warner bros. Pictures, Heyday Films, 1492 Pictures",
+        "distribution": "Warner Bros. Pictures",
+        "screenwriter": "Steve Kloves"
+    },
+    {
+        "film_id": 7,
+        "film_name": "Paddington",
+        "director": "Paul King",
+        "year": "2014",
+        "starring": "Hugh Bonneville, Sally Hawkins, Julie Walters, Nicole Kidman",
+        "duration": "95'",
+        "genre": "Comedy",
+        "production": "StudioCanal, Heyday Films, TF1 Films Production",
+        "distribution": "StudioCanal",
+        "screenwriter": "Paul King"
+    },
+    {
+        "film_id": 8,
         "film_name": "Love Actually",
         "director": "Richard Curtis",
         "year": "2003",
@@ -36,19 +96,19 @@
         "screenwriter": "Richard Curtis"
     },
     {
-        "film_id": 4,
-        "film_name": "Bridget Jones's Diary",
-        "director": "Sharon Maguire",
-        "year": "2001",
-        "starring": "Renée Zellweger, Colin Firth, Hugh Grant, Jim Broadbent",
-        "duration": "97'",
+        "film_id": 9,
+        "film_name": "Notting Hill",
+        "director": "Roger Michell",
+        "year": "1999",
+        "starring": "Julia Roberts, Hugh Grant, Richard McCabe, Rhys Ifans",
+        "duration": "124'",
         "genre": "Comedy, Drama, Romance",
-        "production": "Working Title Films, StudioCanal, Miramax Films",
-        "distribution": "Miramax Films, Universal Pictures",
-        "screenwriter": "Helen Fielding, Andrew Davies, Richard Curtis"
+        "production": "PolyGram Filmed Entertainment, Working Title Films",
+        "distribution": "Universal Pictures",
+        "screenwriter": "Richard Curtis"
     },
     {
-        "film_id": 5,
+        "film_id": 10,
         "film_name": "Sherlock",
         "director": "Paul McGuigan, Nick Hurran, Coky Giedroyc, Toby Haynes",
         "year": "2010-2017",
@@ -60,19 +120,7 @@
         "screenwriter": "Steven Moffat, Mark Gatiss"
     },
     {
-        "film_id": 6,
-        "film_name": "Bridgerton",
-        "director": "Julie Anne Robinson, Tom Verica, Alrick Riley, Cheryl Dunye",
-        "year": "2020-present",
-        "starring": "Adjoa Andoh, Julie Andrews, Jonathan Bailey, Phoebe Dynevor, Nicola Coughlan, Regé-Jean Page",
-        "duration": "60' (per episode)",
-        "genre": "Drama, History, Romance",
-        "production": "Shondaland, CVD Productions",
-        "distribution": "Netflix",
-        "screenwriter": "Chris Van Dusen"
-    },
-    {
-        "film_id": 7,
+        "film_id": 11,
         "film_name": "Red, White & Royal Blue",
         "director": "Matthew López",
         "year": "2023",
@@ -84,7 +132,19 @@
         "screenwriter": "Matthew López, Ted Malawer"
     },
     {
-        "film_id": 8,
+        "film_id": 12,
+        "film_name": "Bridget Jones's Diary",
+        "director": "Sharon Maguire",
+        "year": "2001",
+        "starring": "Renée Zellweger, Colin Firth, Hugh Grant, Jim Broadbent",
+        "duration": "97'",
+        "genre": "Comedy, Drama, Romance",
+        "production": "Working Title Films, StudioCanal, Miramax Films",
+        "distribution": "Miramax Films, Universal Pictures",
+        "screenwriter": "Helen Fielding, Andrew Davies, Richard Curtis"
+    },
+    {
+        "film_id": 13,
         "film_name": "Four Weddings and a Funeral",
         "director": "Mike Newell",
         "year": "1994",
@@ -94,5 +154,53 @@
         "production": "Working Title Films, PolyGram Filmed Entertainment",
         "distribution": "Gramercy Pictures, Rank Film Distributors",
         "screenwriter": "Richard Curtis"
+    },
+    {
+        "film_id": 14,
+        "film_name": "Bridgerton",
+        "director": "Julie Anne Robinson, Tom Verica, Alrick Riley, Cheryl Dunye",
+        "year": "2020-present",
+        "starring": "Adjoa Andoh, Julie Andrews, Jonathan Bailey, Phoebe Dynevor, Nicola Coughlan, Regé-Jean Page",
+        "duration": "60' (per episode)",
+        "genre": "Drama, History, Romance",
+        "production": "Shondaland, CVD Productions",
+        "distribution": "Netflix",
+        "screenwriter": "Chris Van Dusen"
+    },
+    {
+        "film_id": 15,
+        "film_name": "Harry Potter and the Order of Phoenix",
+        "director": "David Yates",
+        "year": "2007",
+        "starring": "Daniel Radcliffe, Rupert Grint, Emma Watson, Helena Bonham Carter, Ralph Fiennes, Michael Gambon",
+        "duration": "138'",
+        "genre": "Fantasy",
+        "production": "Warner bros. Pictures, Heyday Films",
+        "distribution": "Warner Bros. Pictures",
+        "screenwriter": "Michael Goldenberg"
+    },
+    {
+        "film_id": 16,
+        "film_name": "Harry Potter and the Half-Blood Prince",
+        "director": "David Yates",
+        "year": "2009",
+        "starring": "Daniel Radcliffe, Rupert Grint, Emma Watson, Helena Bonham Carter, Michael Gambon",
+        "duration": "153'",
+        "genre": "Fantasy",
+        "production": "Warner bros. Pictures, Heyday Films",
+        "distribution": "Warner Bros. Pictures",
+        "screenwriter": "Steve Kloves"
+    },
+    {
+        "film_id": 17,
+        "film_name": "Mary Poppins Returns",
+        "director": "Rob Marshall",
+        "year": "2018",
+        "starring": "Emily Blunt, Lin-Manuel MIranda, Ben Whishaw, Julie Walters, Angela Lansbury",
+        "duration": "131'",
+        "genre": "Musical, Fantasy, Comedy",
+        "production": "Walt Disney Pictures, Pixar Animation Studios, Lucamar Productions, Marc Platt Productions",
+        "distribution": "Walt Disney Studios",
+        "screenwriter": "Davd Magee"
     }
 ]
