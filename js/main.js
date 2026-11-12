@@ -123,3 +123,42 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(row);
     });
 });
+
+// Fetch per i metadati del film
+document.addEventListener("DOMContentLoaded", () => {
+    const metadataList = document.getElementById("metadata-list");
+    const mainElement = document.querySelector("main");
+    
+    if (metadataList && mainElement && mainElement.dataset.filmId) {
+        const filmIdToFind = parseInt(mainElement.dataset.filmId, 10);
+        fetch('../json/film_metadata.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Impossible to find a JSON file (error " + response.status + ")");
+                }
+                return response.json();
+            })
+            .then(data => {
+                const currentFilm = data.find(film => film.film_id === filmIdToFind);
+                
+                if (currentFilm) {
+                    metadataList.innerHTML = `
+                        <li><strong>Title:</strong> ${currentFilm.film_name}</li>
+                        <li><strong>Director:</strong> ${currentFilm.director}</li>
+                        <li><strong>Year:</strong> ${currentFilm.year}</li>
+                        <li><strong>Genre:</strong> ${currentFilm.genre}</li>
+                        <li><strong>Starring:</strong> ${currentFilm.starring}</li>
+                        <li><strong>Duration:</strong> ${currentFilm.duration}</li>
+                        <li><strong>Production:</strong> ${currentFilm.production}</li>
+                        <li><strong>Distribution:</strong> ${currentFilm.distribution}</li>
+                    `;
+                } else {
+                    metadataList.innerHTML = `<li>No metadata for ID ${filmIdToFind}</li>`;
+                }
+            })
+            .catch(error => {
+                console.error("Fetch error:", error);
+                metadataList.innerHTML = `<li>Error. Please open the console.</li>`;
+            });
+    }
+});

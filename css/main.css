@@ -1535,3 +1535,90 @@ body div:has(> .catalog-img) .catalog-img,
         text-align: center;
     }
 }
+
+/* Assicura che la sezione principale delle location abbia un margine/padding di sicurezza dai bordi dello schermo */
+.location-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- STILE SEZIONE METADATI --- */
+.metadata-box {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    background-color: var(--timeline-card-bg);
+    border: 1px solid var(--rule-color, var(--text-color));
+    border-radius: var(--btn-radius, 4px);
+}
+
+.metadata-box h3 {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    padding: 0;
+    text-align: left;
+}
+
+.metadata-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.metadata-box li {
+    font-family: var(--font-family);
+    font-size: 0.95rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed var(--timeline-line-color, #ddd);
+}
+
+.metadata-box li:last-child {
+    border-bottom: none;
+}
+
+/* Adattamento specifico per il tema Newspaper */
+body.theme-newspaper .metadata-box {
+    border: 1px solid var(--rule-color);
+    border-top: 4px double var(--rule-color);
+    box-shadow: 2px 2px 0 rgba(18, 18, 18, 0.1);
+}
+
+/* Adattamento specifico per il tema Renaissance */
+body.theme-renaissance .metadata-box {
+    border: 3px double var(--primary-color);
+    background-image: radial-gradient(ellipse at center, #FBF7EF 55%, #EFE4CC 100%);
+    border-radius: 0;
+}
+/* Correzione definitiva per la metadata-box nel tema Future */
+body.theme-future .metadata-box {
+    border-radius: 12px !important; /* Sostituisce il 999px ereditato dai bottoni */
+    padding-top: 2.2rem !important;  /* Dà spazio al titolo per non toccare il bordo curvo */
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Pulizia della metadata-box (senza border-radius ereditato) e aggiunta di un buon padding interno */
+.metadata-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+    padding: 2rem !important; /* Spazio interno generoso in modo che il testo non tocchi i bordi del box */
+    border-radius: 0 !important; /* Rimuove qualsiasi arrotondamento */
+}
+
+/* Gestione della mappa affiancata con corretta spaziatura */
+.map-box {
+    width: 100%;
+}
+
+.map-box iframe {
+    width: 100% !important;
+    height: 450px;
+    border-radius: 0 !important; /* Anche la mappa senza bordi arrotondati, se preferisci uno stile squadrato */
+}
