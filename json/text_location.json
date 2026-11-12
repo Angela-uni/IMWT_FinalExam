@@ -376,5 +376,46 @@
                 "long": "For production designers and television historians, Ranger's House exemplifies how well-preserved Georgian domestic architecture can be utilized to establish class markers and generational continuity within period drama. The building's architectural grammar—defined by its classic five-bay Palladian massing, hipped slate roof, and restrained brick detailing—projects an aura of established, understated wealth that differentiates the Bridgerton family from newer, flashier social climbers in the series. In Bridgerton, the exterior asset is integrated seamlessly via match-cuts with studio-built interior sets, maintaining geographical and visual cohesion. The addition of temporary botanical dressing, such as the iconic wisteria installations, demonstrates how production intervention can soften formal Georgian lines to suit a heightened, romanticized Regency aesthetic. Furthermore, the building's geographic orientation facing Greenwich Park ensures clean, unobstructed natural illumination throughout the filming day, eliminating the need for excessive artificial diffusion during exterior sequences. By anchoring a fantasy-infused historical romance in an actual 18th-century structural landmark, the production achieved an enduring visual signature that defines contemporary costume drama."
             }
         }
+    },
+    {
+        "text_id": 19,
+        "reference": "Buckingham Palace & Queen Victoria Memorial",
+        "levels": {
+            "child": {
+                "short": "Buckingham Palace is the giant home of the King and Queen in London, with a shiny gold statue of Queen Victoria out front. In the movie \"Paddington\", a cute little bear visits the palace in the rain and shares a delicious sandwich with a friendly guard!",
+                "medium": "Buckingham Palace is one of the most famous places in the whole world! It is the big, grand palace where the King of England lives when he is in London. Right in front of its massive front gates stands the Queen Victoria Memorial, a giant white marble fountain topped with a bright, glittering gold statue that shines in the sun. In the funny family movie \"Paddington\", the lost little bear wanders through the rainy streets of London until he ends up right outside these famous palace gates. Feeling lonely and wet, he is noticed by a kindly royal guard wearing a tall black furry hat. The guard opens up his small guard booth to let Paddington shelter from the rain, and they even share a tasty marmalade sandwich hidden under the guard's hat!",
+                "long": "When you visit London, one place you cannot miss is Buckingham Palace, the grand official home of the British royal family. It has hundreds of rooms, beautiful green gardens, and big iron gates guarded by soldiers wearing red coats and tall black bearskin hats. Right outside the front of the palace sits the Queen Victoria Memorial, a huge monument made of brilliant white marble surrounded by statues of lions, angels, and a glowing gold figure at the very top. This iconic royal landmark plays a very sweet part in the movie \"Paddington\". After running away from his new home because he thinks he caused too much trouble, Paddington finds himself walking through London in the middle of a heavy rainstorm. He walks right up to the front gates of Buckingham Palace, looking sad and completely soaked. Luckily, one of the famous guards standing inside a sentry box takes pity on the little bear. The guard invites Paddington inside his tiny wooden hut to get dry, pulls out a warm cup of tea from a thermos, and even shares a marmalade sandwich that he keeps hidden right inside his tall black hat! It is one of the warmest and funniest moments in the whole movie, right outside one of London's grandest places."
+            },
+            "adult": {
+                "short": "Buckingham Palace is the iconic administrative headquarters and official residence of the British monarch in London, fronted by the grand Queen Victoria Memorial. In \"Paddington\", this famous gateway serves as the setting for a heartwarming scene where the lost bear shelters from the rain.",
+                "medium": "Buckingham Palace has served as the official London residence of the UK’s sovereigns since 1837. Located in Westminster, the grand facade is framed by The Mall and the Queen Victoria Memorial—a magnificent white marble monument erected in 1911 to honor the long-reigning monarch. The memorial features a soaring central pylon topped with a gilded bronze statue of Winged Victory. In the 2014 live-action film \"Paddington\", this world-famous landmark makes a memorable cinematic appearance. After feeling out of place with the Brown family, Paddington wanders the city at night and ends up outside the palace gates during a downpour. A guard stationed at the sentry box secretly offers the wet bear shelter and a hot cup of tea, providing a comforting, quintessential London moment against the backdrop of the royal residence.",
+                "long": "Buckingham Palace and the Queen Victoria Memorial form the regal heart of central London. The palace itself contains 775 rooms and serves both as a working royal residence and the administrative center of the monarchy. Dominating the grand courtyard plaza in front of the palace gates is the Queen Victoria Memorial, designed by Sir Aston Webb and sculpted by Sir Thomas Brock. Constructed from 2,300 tons of white Carrara marble, the monument is surrounded by elaborate sculptures representing Truth, Justice, and Motherhood, crowned by a glittering golden figure. In the film \"Paddington\", this iconic location provides a pivotal backdrop during Paddington’s period of isolation in the city. Wandering through London in a heavy rainstorm, the young Peruvian bear comes to a halt in front of the ornate palace gates and the gleaming memorial structure. The scene captures the classic image of a British Coldstream Guard in a sentry box. Taking pity on the rain-soaked bear, the guard steps out of character to invite Paddington into his box, sharing tea and a marmalade sandwich. By pairing the grand scale of Britain's premier royal landmark with a small, intimate moment of kindness, the movie highlights the charming contrast between London's formal majesty and its welcoming spirit."
+            },
+            "expert": {
+                "short": "Buckingham Palace and the Queen Victoria Memorial set the stage for a classic visual gag in \"Paddington\", contrasting monolithic state architecture with an intimate, whimsical interaction between the CGI bear and a royal guard.",
+                "medium": "In Paul King’s 2014 adaptation of \"Paddington\", the narrative uses iconic London geography to ground its magical-realism tone within recognizable real-world space. The exterior sequence at Buckingham Palace and the adjacent Queen Victoria Memorial juxtaposes the imposing scale of British imperial architecture against the vulnerability of the small animated protagonist. The scene relies on physical comedic timing and traditional London iconography. As Paddington seeks refuge by the palace gates, a Guard breaks stoic protocol to offer him tea and a sandwich from beneath his bearskin cap. Framing the CGI character directly against the historic gates and marble monuments reinforces the film's core motif: an outsider attempting to navigate the imposing, formal structures of British culture.",
+                "long": "Paul King’s direction in \"Paddington\" relies heavily on stylized geography, using London’s most famous architectural touchstones to establish mood and thematic depth. The sequence shot around Buckingham Palace and the Queen Victoria Memorial serves as a key emotional beats in the second act, visually framing Paddington's alienation against the monumental scale of the city. The Queen Victoria Memorial and the gilded palace gates frame the perimeter where Paddington wanders in isolation during a rainstorm. The production design and cinematography leverage the stark, rain-slicked monumental stonework to emphasize the bear's small stature and loneliness within the vast capital. The turn of the scene relies on subverting established British tropes. The Guard stationed at the sentry box—a figure traditionally associated with uncompromising rigidity—relents to show empathy, pulling a hot thermos and a marmalade sandwich from his bearskin hat. Placing this surreal, fairytale-like interaction directly in front of the real-world seat of the monarchy plays directly into the film's signature blend of heartwarming sincerity and cheeky British humor, creating one of the movie's most memorable visual beats."
+            }
+        }
+    },
+    {
+        "text_id": 1,
+        "reference": "St. Batholomew the Great",
+        "levels": {
+            "child": {
+                "short": "",
+                "medium": "",
+                "long": ""
+            },
+            "adult": {
+                "short": "",
+                "medium": "",
+                "long": ""
+            },
+            "expert": {
+                "short": "",
+                "medium": "",
+                "long": ""
+            }
+        }
     }
-]
