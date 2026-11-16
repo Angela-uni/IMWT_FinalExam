@@ -55,7 +55,7 @@
         </nav>
 
         <!-- LOCATION PAGE -->
-        <main data-film-id="4">
+        <main data-film-id="4" data-text-id="4">
             <!-- Title -->
             <h1>Buckingham Palace</h1>
 
@@ -63,21 +63,32 @@
                 
                 <!-- Location photo -->
                  <!--Provider of the photo: https://stlukesmews.com/-->
-                <div class="photo-box">
-                    <img class="location-img" src="../imgs/buckingham_palace.jpg" alt="Photo">
-                </div>
+                <div class="photo-text-row">
+                    <div class="photo-box">
+                        <img class="location-img" src="../imgs/buckingham_palace.jpg" alt="Photo">
+                    </div>
 
-                <!-- Box text for the fetch -->
-                <div class="text-scroll-box">
-                <!-- Name of the Location -->
-                <h3 id="location-text-title"></h3>
-    
-                <!-- box container for JS -->
-                <div id="text-container"></div>
-    
-                <!-- Text button -->
-                <button type="button" id="btn-tell-less">Tell me less</button>
-                <button type="button" id="btn-tell-more">Tell me more</button>
+                    <!-- Box text for the fetch -->
+                    <div class="text-scroll-box">
+                        <!-- Name of the Location -->
+                        <h3 id="location-text-title"></h3>
+
+                        <!-- Audience buttons -->
+                        <div class="audience-buttons">
+                            <button type="button" class="btn-audience" data-audience="child" aria-pressed="false">Child</button>
+                            <button type="button" class="btn-audience active" data-audience="adult" aria-pressed="true">Adult</button>
+                            <button type="button" class="btn-audience" data-audience="expert" aria-pressed="false">Expert</button>
+                        </div>
+
+                        <!-- box container for JS (scrollable) -->
+                        <div id="text-container"></div>
+
+                        <!-- Text length buttons -->
+                        <div class="length-buttons">
+                            <button type="button" id="btn-tell-less">Tell me less</button>
+                            <button type="button" id="btn-tell-more">Tell me more</button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- GRIGLIA: Metadati a sinistra e Mappa a destra -->
@@ -112,9 +123,9 @@
 
             <!-- Location navigation -->
             <nav class="location-navigation">
-            <button type="button" id="btn-prev-location">&lt;&lt; Previous location</button>
-            <button type="button" id="btn-next-location">Next location &gt;&gt;</button>
-</nav>
+                <a id="btn-prev-location" href="drapers_hall.html">&lt;&lt; Previous location</a>
+                <a id="btn-next-location" href="LancasterHouse.html">Next location &gt;&gt;</a>
+            </nav>
 
         </main>
 
@@ -127,9 +138,9 @@
                 </div>
                 <div class="col-sm-2 d-flex flex-column">
                     <h5>Narratives</h5>
-                    <a class="narlink" href="timeTravel.html" title="Time Travel">Time Travel</a>
-                    <a class="narlink" href="lovestories.html" title="Love Stories">Love Stories</a>
-                    <a class="narlink" href="childhood.html" title="Back to Childhood">Back to Childhood</a>
+                    <a class="narlink" href="../timeTravel.html" title="Time Travel">Time Travel</a>
+                    <a class="narlink" href="../lovestories.html" title="Love Stories">Love Stories</a>
+                    <a class="narlink" href="../childhood.html" title="Back to Childhood">Back to Childhood</a>
                 </div>
                 <div class="col-sm-2 d-flex flex-column">
                     <h5>Themes</h5>
@@ -139,9 +150,9 @@
                     <a class="foolink theme-option" href="#" data-theme="future" title="Future">Future</a>
                 </div>
                 <div class="col-sm-2 d-flex flex-column">
-                    <a class="same" href="documentation.html" title="Documentation">Documentation</a>
-                    <a class="same" href="disclaimer.html" title="Disclaimer">Disclaimer</a>
-                    <a class="same" href="about.html" title="About">About</a>
+                    <a class="same" href="../documentation.html" title="Documentation">Documentation</a>
+                    <a class="same" href="../disclaimer.html" title="Disclaimer">Disclaimer</a>
+                    <a class="same" href="../about.html" title="About">About</a>
                 </div>
                 <div class="col-sm-4 text-center">
                     <h5>Contacts</h5>

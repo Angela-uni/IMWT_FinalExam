@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>London Film Route | Trafalgar Square</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../imgs/logo2.png" alt="logo" title="Homepage" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Narratives</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../timeTravel.html">Time Travel</a></li>
+                                <li><a class="dropdown-item" href="../lovestories.html">Love Stories</a></li>
+                                <li><a class="dropdown-item" href="../childhood.html">Back to Childhood</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Themes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item theme-option" href="#" data-theme="renaissance">English renaissance</a></li>
+                                <li><a class="dropdown-item theme-option" href="#" data-theme="early1900">Early 1900s</a></li>
+                                <li><a class="dropdown-item theme-option" href="#" data-theme="newspaper">90s-00s Newspaper</a></li>
+                                <li><a class="dropdown-item theme-option" href="#" data-theme="future">Future</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../documentation.html" title="Documentation">Documentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../disclaimer.html" title="Disclaimer">Disclaimer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html" title="About">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- LOCATION PAGE -->
+        <main data-film-id="5" data-text-id="6">
+            <!-- Title -->
+            <h1>Trafalgar Square</h1>
+
+            <section class="location-container">
+                
+                <!-- Location photo -->
+                 <!--Provider of the photo: https://stlukesmews.com/-->
+                <div class="photo-text-row">
+                    <div class="photo-box">
+                        <img class="location-img" src="../imgs/trafalgar_square.jpg" alt="Photo">
+                    </div>
+
+                    <!-- Box text for the fetch -->
+                    <div class="text-scroll-box">
+                        <!-- Name of the Location -->
+                        <h3 id="location-text-title"></h3>
+
+                        <!-- Audience buttons -->
+                        <div class="audience-buttons">
+                            <button type="button" class="btn-audience" data-audience="child" aria-pressed="false">Child</button>
+                            <button type="button" class="btn-audience active" data-audience="adult" aria-pressed="true">Adult</button>
+                            <button type="button" class="btn-audience" data-audience="expert" aria-pressed="false">Expert</button>
+                        </div>
+
+                        <!-- box container for JS (scrollable) -->
+                        <div id="text-container"></div>
+
+                        <!-- Text length buttons -->
+                        <div class="length-buttons">
+                            <button type="button" id="btn-tell-less">Tell me less</button>
+                            <button type="button" id="btn-tell-more">Tell me more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GRIGLIA: Metadati a sinistra e Mappa a destra -->
+                <div class="row align-items-center my-4">
+                    <!-- Colonna Sinistra: Metadata + YouTube -->
+                    <div class="col-lg-6">
+                        <div class="metadata-box">
+                            <h3>Film Metadata</h3>
+                            <ul id="metadata-list">
+                                <!-- Dinamico via JS -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Colonna Destra: Mappa -->
+                    <div class="col-lg-6">
+                        <div class="map-box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1790432854731!6m8!1m7!1se7_01WZ3aOpVlIFGbDmMqA!2m2!1d51.50807379256192!2d-0.1280601411642128!3f129.54521662562843!4f-0.123148837597995!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Link YouTube -->
+                <div class="youtube-box">
+                    <a href="https://www.youtube.com/watch?v=bMKpcPqwfK8">
+                    <button type="button" class="youtube-link">See 101 Dalmatians scene</button>
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- Location navigation -->
+            <nav class="location-navigation">
+                <a id="btn-prev-location" href="reform_club.html">&lt;&lt; Previous location</a>
+                <a id="btn-next-location" href="great_scotland_yard.html">Next location &gt;&gt;</a>
+            </nav>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="../imgs/logo2.png" alt="logo" title="Logo" class="img-fluid">
+                    <p>2026 <i class="material-icons" style="font-size:1em">copyright</i> Alma Mater Studiorum - Università di Bologna</p>
+                </div>
+                <div class="col-sm-2 d-flex flex-column">
+                    <h5>Narratives</h5>
+                    <a class="narlink" href="../timeTravel.html" title="Time Travel">Time Travel</a>
+                    <a class="narlink" href="../lovestories.html" title="Love Stories">Love Stories</a>
+                    <a class="narlink" href="../childhood.html" title="Back to Childhood">Back to Childhood</a>
+                </div>
+                <div class="col-sm-2 d-flex flex-column">
+                    <h5>Themes</h5>
+                    <a class="foolink theme-option" href="#" data-theme="renaissance" title="English renaissance">English renaissance</a>
+                    <a class="foolink theme-option" href="#" data-theme="early1900" title="Early 1900s">Early 1900s</a>
+                    <a class="foolink theme-option" href="#" data-theme="newspaper" title="90s-00s Newspaper">90s-00s Newspaper</a>
+                    <a class="foolink theme-option" href="#" data-theme="future" title="Future">Future</a>
+                </div>
+                <div class="col-sm-2 d-flex flex-column">
+                    <a class="same" href="../documentation.html" title="Documentation">Documentation</a>
+                    <a class="same" href="../disclaimer.html" title="Disclaimer">Disclaimer</a>
+                    <a class="same" href="../about.html" title="About">About</a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h5>Contacts</h5>
+                    <p>Angela Paganini</p>
+                    <a href="mailto:angela.paganini@studio.unibo.it" target="_blank" title="Write an email"><i class="material-icons" style="font-size:2em">email</i></a>
+                    <a href="https://github.com/Angela-uni" target="_blank" title="GitHub profile"><i class="fa fa-github" style="font-size:2em"></i></a>
+                    <p>Susanna Valentini</p>
+                    <a href="mailto:susanna.valentini@studio.unibo.it" target="_blank" title="Write an email"><i class="material-icons" style="font-size:2em">email</i></a>
+                    <a href="https://github.com/SusannaV14" target="_blank" title="GitHub profile"><i class="fa fa-github" style="font-size:2em"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+    </body>
+</html>

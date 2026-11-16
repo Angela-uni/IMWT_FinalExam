@@ -162,3 +162,96 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     }
 });
+
+// Fetch per i testi delle location (3 pubblici x 3 lunghezze)
+document.addEventListener("DOMContentLoaded", () => {
+    const textContainer = document.getElementById("text-container");
+    const mainElement = document.querySelector("main");
+
+    if (!textContainer || !mainElement || !mainElement.dataset.textId) return;
+
+    const textIdToFind = parseInt(mainElement.dataset.textId, 10);
+    const titleElement = document.getElementById("location-text-title");
+    const pageTitle = document.querySelector("main h1");
+    const btnLess = document.getElementById("btn-tell-less");
+    const btnMore = document.getElementById("btn-tell-more");
+    const audienceButtons = document.querySelectorAll(".btn-audience");
+
+    const lengths = ["short", "medium", "long"];
+    // Testo di default: adult - medium
+    let audience = "adult";
+    let lengthIndex = 1;
+    let currentText = null;
+
+    function render() {
+        const text = currentText.levels[audience][lengths[lengthIndex]];
+        textContainer.innerHTML = "";
+        const paragraph = document.createElement("p");
+        paragraph.textContent = text;
+        textContainer.appendChild(paragraph);
+        textContainer.scrollTop = 0;
+
+        // Bottone del pubblico attivo
+        audienceButtons.forEach(button => {
+            const isActive = button.dataset.audience === audience;
+            button.classList.toggle("active", isActive);
+            button.setAttribute("aria-pressed", isActive);
+        });
+
+        // Disattiva "less" sul testo short e "more" sul testo long
+        if (btnLess) btnLess.disabled = lengthIndex === 0;
+        if (btnMore) btnMore.disabled = lengthIndex === lengths.length - 1;
+    }
+
+    fetch('../json/text_location.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Impossible to find a JSON file (error " + response.status + ")");
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Cerca per text_id: la stessa location può avere più testi (uno per narrativa/film)
+            currentText = data.find(text => text.text_id === textIdToFind);
+
+            if (!currentText) {
+                textContainer.innerHTML = `<p>No text for ID ${textIdToFind}</p>`;
+                return;
+            }
+
+            if (titleElement) {
+                titleElement.textContent = pageTitle ? pageTitle.textContent : currentText.reference;
+            }
+
+            audienceButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    audience = button.dataset.audience;
+                    render();
+                });
+            });
+
+            if (btnLess) {
+                btnLess.addEventListener("click", () => {
+                    if (lengthIndex > 0) {
+                        lengthIndex--;
+                        render();
+                    }
+                });
+            }
+
+            if (btnMore) {
+                btnMore.addEventListener("click", () => {
+                    if (lengthIndex < lengths.length - 1) {
+                        lengthIndex++;
+                        render();
+                    }
+                });
+            }
+
+            render();
+        })
+        .catch(error => {
+            console.error("Fetch error:", error);
+            textContainer.innerHTML = `<p>Error. Please open the console.</p>`;
+        });
+});

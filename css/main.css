@@ -879,6 +879,7 @@ body.theme-renaissance .timeline-card .card-text {
     }
 }
 
+body.theme-renaissance .btn-audience,
 body.theme-renaissance #btn-tell-less,
 body.theme-renaissance #btn-tell-more,
 body.theme-renaissance #btn-prev-location,
@@ -1133,6 +1134,7 @@ body.theme-newspaper .timeline-card .card-text::first-letter {
     }
 }
 
+body.theme-newspaper .btn-audience,
 body.theme-newspaper #btn-tell-less,
 body.theme-newspaper #btn-tell-more,
 body.theme-newspaper #btn-prev-location,
@@ -1332,6 +1334,7 @@ body.theme-early1900 .timeline-card .card-text {
     }
 }
 
+body.theme-early1900 .btn-audience,
 body.theme-early1900 #btn-tell-less,
 body.theme-early1900 #btn-tell-more,
 body.theme-early1900 #btn-prev-location,
@@ -1378,6 +1381,7 @@ body.theme-future a:not(.nav-link):not(.dropdown-item):not(.btn):not(.navbar-bra
     }
 }
 
+body.theme-future .btn-audience,
 body.theme-future #btn-tell-less,
 body.theme-future #btn-tell-more,
 body.theme-future #btn-prev-location,
@@ -1398,6 +1402,7 @@ body.theme-future .youtube-link:focus-visible {
 }
 
 /* --- BOTTONI DELLE PAGINE LOCATION --- */
+.btn-audience,
 #btn-tell-less,
 #btn-tell-more,
 #btn-prev-location,
@@ -1415,10 +1420,12 @@ body.theme-future .youtube-link:focus-visible {
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease, filter 0.25s ease;
 }
 
+.btn-audience:hover,
 #btn-tell-less:hover,
 #btn-tell-more:hover,
 #btn-prev-location:hover,
 #btn-next-location:hover,
+.btn-audience:focus-visible,
 #btn-tell-less:focus-visible,
 #btn-tell-more:focus-visible,
 #btn-prev-location:focus-visible,
@@ -1428,6 +1435,7 @@ body.theme-future .youtube-link:focus-visible {
     transform: translateY(-1px);
 }
 
+.btn-audience:focus-visible,
 #btn-tell-less:focus-visible,
 #btn-tell-more:focus-visible,
 #btn-prev-location:focus-visible,
@@ -1437,6 +1445,7 @@ body.theme-future .youtube-link:focus-visible {
     outline-offset: 3px;
 }
 
+.btn-audience,
 #btn-tell-less,
 #btn-tell-more {
     margin: 1rem 0.5rem 0 0;
@@ -1457,6 +1466,18 @@ body.theme-future .youtube-link:focus-visible {
 .youtube-link:focus-visible {
     filter: brightness(0.9);
     transform: translateY(-1px);
+}
+
+/* Previous / Next location: sono link <a> con lo stesso aspetto dei bottoni */
+#btn-prev-location,
+#btn-next-location,
+#btn-prev-location:hover,
+#btn-next-location:hover,
+#btn-prev-location:focus-visible,
+#btn-next-location:focus-visible {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .location-navigation {
@@ -1621,4 +1642,122 @@ body.theme-future .metadata-box {
     width: 100% !important;
     height: 450px;
     border-radius: 0 !important; /* Anche la mappa senza bordi arrotondati, se preferisci uno stile squadrato */
+}
+
+/* --- FOTO + BOX TESTO AFFIANCATI (pagine location) --- */
+.photo-text-row {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    margin: 1.5rem 0 2rem;
+}
+
+.photo-text-row .photo-box,
+.photo-text-row .text-scroll-box {
+    flex: 1 1 50%;
+    min-width: 0;
+}
+
+.photo-text-row .location-img {
+    max-width: 100%;
+}
+
+/* Box di dimensione costante: scorre solo il testo */
+.text-scroll-box {
+    display: flex;
+    flex-direction: column;
+    height: 467px;
+    padding: 1.5rem 1.75rem;
+    background-color: var(--timeline-card-bg);
+    border: 1px solid var(--rule-color, var(--text-color));
+    border-radius: 0;
+    text-align: left;
+}
+
+.text-scroll-box #location-text-title {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin: 0 0 0.5rem;
+    padding: 0;
+    text-align: left;
+}
+
+.audience-buttons,
+.length-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex: 0 0 auto;
+}
+
+.audience-buttons .btn-audience,
+.length-buttons #btn-tell-less,
+.length-buttons #btn-tell-more {
+    margin: 0;
+}
+
+.audience-buttons {
+    margin-bottom: 1rem;
+}
+
+.length-buttons {
+    margin-top: 1rem;
+}
+
+#text-container {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 0.75rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) transparent;
+}
+
+#text-container p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Bottone del pubblico selezionato */
+.btn-audience.active {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+    border-color: var(--btn-hover-bg);
+}
+
+/* Tell me less / more non disponibili (testo short o long) */
+#btn-tell-less:disabled,
+#btn-tell-more:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+}
+
+/* Varianti del box testo per tema (come la metadata-box) */
+body.theme-newspaper .text-scroll-box {
+    border: 1px solid var(--rule-color);
+    border-top: 4px double var(--rule-color);
+    box-shadow: 2px 2px 0 rgba(18, 18, 18, 0.1);
+}
+
+body.theme-renaissance .text-scroll-box {
+    border: 3px double var(--primary-color);
+    background-image: radial-gradient(ellipse at center, #FBF7EF 55%, #EFE4CC 100%);
+}
+
+body.theme-future .text-scroll-box {
+    border-radius: 12px;
+}
+
+@media (max-width: 991.98px) {
+    .photo-text-row {
+        flex-direction: column;
+    }
+
+    .text-scroll-box {
+        height: 420px;
+    }
 }
